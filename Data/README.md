@@ -9,4 +9,4 @@ GMP: Lin- CD34+ CD38+ CD45RA+ CD123+ CD10-;
 CLP: Lin- CD34+ CD38+ CD45RA+ CD7- CD10+;  
 MLP1: Lin- CD34+ CD38- CD90- CD45RA+ CD7- CD10+.
 
-For more detailed description of data types and processing, go to [Data Summary and Processing Details](team_Bloodies/Data/Data_Summary_and_Processing_Details.md). The RNA-seq data is processed with differential expression analysis across all populations. The DNA methylation data is too big to upload and the GEO ID has been provided for each.
+For more detailed description of data types and processing, go to [Data Summary and Processing Details](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Data/Data_Summary_and_Processing_Details.md). The RNA-seq data is processed with differential expression analysis across all populations. The DNA methylation data is too big to upload and the GEO ID has been provided for each.
