@@ -29,8 +29,7 @@ Processing: The available DNA methylation data has been aligned and not quantita
 Summary of DNA methylation data:
 ```{r echo = FALSE}
 a<-read.delim("/Users/fangwu/Documents/540/data/DNA.txt")
-library(knitr)
-kable(a)
+a
 ```
 
 
@@ -49,8 +48,7 @@ Processing:
 Summary of DNA methylation data:
 ```{r echo = FALSE}
 b<-read.delim("/Users/fangwu/Documents/540/data/RNA.txt")
-library(knitr)
-kable(b)
+b
 ```
 
 ##**RNA-seq for leukemia samples**
@@ -70,8 +68,7 @@ ${prefix}.isoforms.results
 Summary of DNA methylation data:
 ```{r echo = FALSE}
 c<-read.delim("/Users/fangwu/Documents/540/data/RNA-L.txt")
-library(knitr)
-kable(c)
+c
 ```
 
 

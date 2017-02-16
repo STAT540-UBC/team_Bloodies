@@ -3,6 +3,8 @@ title: "Project Proposal"
 author: "Team Bloodies"
 date: '2017-02-14'
 output: html_document
+  toc: true
+  keep_md: true
 ---
 **Background & Motivation:** 
 Human hematopoietic cells capable of regenerating the lifelong production of all types of mature blood cells are applied to curative clinical therapies for numerous hematologic malignancies and congenital diseases [1]. Blood differentiation initiates at the level of multipotent stem cells and passes through a series of increasingly lineage-restricted progenitor intermidiates [2]. Due to the rarity of these progenitors and difficulties to obtain human samples, the mechanisms that regulate lineage commitment of human cells remain poorly understood. Transcription factors (TFs) and their interactions within gene regulatory networks are central to the intracellular decision making processes [3]. However, much remains to be learned about the way in which individual factors are connected within wider regulatory networks. Recent studies implicated that the chromatin state foreshadows transcriptional programs in differentiated cells [4][5][6]. Our overall hypothesis is that TFs binding to the active epigenomic regions play a pivotal role in the differentiation programs during early lineage commitment of HSCs. Our objective is to identify specific TFs primarily responsible for the differential gene expression in committed progenitors by combining epigenomic and transcriptomic data in seven hematopoietic stem/progenitor populations.  
@@ -12,7 +14,7 @@ So far only two resources, the Canadian CEEHRC Network and the BluePrint Epigeno
 **Division of labor:**
 ---
 | Name | Initial work assignment | Affliation | Expertise |
-| ------------- | ------------- |
+| ------------- | ------------- | ------------- | ------------- |
 | Annie Cavalla | Section 3: TF binding site enrichment | Bioinformatics | Cancer genomics |
 | Rawnak Hoque  | Section 2/5: RNA-seq analysis of differentially expressed genes | Genome Science and Technology | Genome scale data analysis
 | Fangwu Wang | Section 4/5: TF pattern analysis; Leukemia correlation | Medical Genetics | Stem cell biology
@@ -35,7 +37,7 @@ Since this RNA-seq dataset for normal hematopoietic populations does not have sa
 
 4.Decipher the patterns of TF functions in cell differentiation: in each population, inspect the DNA methylation state and gene expression levels of active TFs; Use ANOVA test to compare the methylation and gene expression levels of TFs across the seven populations to see whether TFs show lower methylation and higher expression in the population they were identified as active; We will use these active TFs to derive a TF regulatory network for each population [7]. To construct these networks, we infer a positive/negative interaction between two TFs whenever a binding site for one of the TFs is found in regulatory regions using Ensembl regulatory build genomic information for the other TF and expression of the two TF genes was positively/negatively correlated (absolute Spearman correlation coefficient > 0.25 from RNA-seq data). 
 
-5. Gene expression analysis in different types of leukemia: leukemia tumorigenesis is frequently associated with dysregulation of differentiation programs. To evaluate whether the characteristic TFs identified from different progenitor populations are positively correlated with leukemia with corresponding cell of origin (myeloid vs lymphoid), we will analyze expression profiles of at least two leukemia types (AML and CLL), representing myeloid and lymphoid lineages respectively. We will use Limma to perform differential expression analysis. Then we will perform clustering of all patient samples based on the expression of the TFs we identified from the previous analyses to see if TFs also play a similar role in lineage determination in leukemia.
+5.Gene expression analysis in different types of leukemia: leukemia tumorigenesis is frequently associated with dysregulation of differentiation programs. To evaluate whether the characteristic TFs identified from different progenitor populations are positively correlated with leukemia with corresponding cell of origin (myeloid vs lymphoid), we will analyze expression profiles of at least two leukemia types (AML and CLL), representing myeloid and lymphoid lineages respectively. We will use Limma to perform differential expression analysis. Then we will perform clustering of all patient samples based on the expression of the TFs we identified from the previous analyses to see if TFs also play a similar role in lineage determination in leukemia.
 
 
 **References**:
