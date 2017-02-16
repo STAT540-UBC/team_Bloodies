@@ -25,7 +25,7 @@ All members will also have input into the poster on their area of expertise.
 
 **Datasets:**
 We will work with DNA methylation (bisulfite-seq) and RNA-seq data from the published BluePrint Epigenome project [6] which were downloaded from GEO (GSE 87197). All samples were collected from primary human peripheral blood cells in seven stem/progenitor populations: HSC, MPP, CMP, CLP, GMP, MEP, MLP. The DNA methylation data is alignment raw data at single base resolution and quality control of sequencing is available at RnBead website [9]. For each population, we chose three samples (biological replicates) with multiple pools (technical replicates). The corresponding RNA-seq data from same populations was obtained from GEO (GSE 87195). The data has been processed with differential expression analysis on transcript level and we will further quantify it on the gene level.
-Since this RNA-seq dataset for normal hematopoietic populations does not have sample replicates within cell types, we will leverage the results of our TF enrichment and gene expression analysis on RNA-seq data from AML and CLL patient data from BluePrint. The RNA-seq data are available for 21 AML and 7 CLL patient samples in the format of RSEM. 
+Since this RNA-seq dataset for normal hematopoietic populations does not have sample replicates within cell types, we will leverage the results of our TF enrichment and gene expression analysis on RNA-seq data from AML and CLL patient data from BluePrint. The RNA-seq data are available for 17 AML and 7 CLL patient samples in the format of RSEM. 
 
 **Aims and Methods:**
 

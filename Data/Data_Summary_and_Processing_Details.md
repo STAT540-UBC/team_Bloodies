@@ -223,26 +223,22 @@ Summary of DNA methylation data:
 ## 6    RNA-seq venous blood       Acute Myeloid Leukemia UMCG00019    Male
 ## 7    RNA-seq venous blood       Acute Myeloid Leukemia UMCG00026  Female
 ## 8    RNA-seq venous blood       Acute Myeloid Leukemia UMCG00010  Female
-## 9    RNA-seq venous blood       Acute Myeloid Leukemia    S01BP2  Female
-## 10   RNA-seq venous blood       Acute Myeloid Leukemia UMCG00002  Female
-## 11   RNA-seq venous blood       Acute Myeloid Leukemia UMCG00005  Female
-## 12   RNA-seq venous blood       Acute Myeloid Leukemia UMCG00023  Female
-## 13   RNA-seq venous blood       Acute Myeloid Leukemia UMCG00004    Male
-## 14   RNA-seq venous blood       Acute Myeloid Leukemia UMCG00025    Male
-## 15   RNA-seq venous blood       Acute Myeloid Leukemia UMCG00009  Female
-## 16   RNA-seq venous blood       Acute Myeloid Leukemia UMCG00028  Female
-## 17   RNA-seq venous blood       Acute Myeloid Leukemia UMCG00003  Female
-## 18   RNA-seq venous blood       Acute Myeloid Leukemia UMCG00021  Female
-## 19   RNA-seq venous blood       Acute Myeloid Leukemia    S01BTV  Female
-## 20   RNA-seq venous blood       Acute Myeloid Leukemia    S01BVR  Female
-## 21   RNA-seq venous blood       Acute Myeloid Leukemia    S01BSX  Female
-## 22   RNA-seq venous blood Chronic Lymphocytic Leukemia    110CLL  Female
-## 23   RNA-seq venous blood Chronic Lymphocytic Leukemia     12CLL  Female
-## 24   RNA-seq  enous blood Chronic Lymphocytic Leukemia   1525CLL    Male
-## 25   RNA-seq venous blood Chronic Lymphocytic Leukemia    182CLL Unknown
-## 26   RNA-seq venous blood Chronic Lymphocytic Leukemia      3CLL    Male
-## 27   RNA-seq venous blood Chronic Lymphocytic Leukemia   1228CLL    Male
-## 28   RNA-seq venous blood Chronic Lymphocytic Leukemia   1532CLL    Male
+## 9    RNA-seq venous blood       Acute Myeloid Leukemia UMCG00002  Female
+## 10   RNA-seq venous blood       Acute Myeloid Leukemia UMCG00005  Female
+## 11   RNA-seq venous blood       Acute Myeloid Leukemia UMCG00023  Female
+## 12   RNA-seq venous blood       Acute Myeloid Leukemia UMCG00004    Male
+## 13   RNA-seq venous blood       Acute Myeloid Leukemia UMCG00025    Male
+## 14   RNA-seq venous blood       Acute Myeloid Leukemia UMCG00009  Female
+## 15   RNA-seq venous blood       Acute Myeloid Leukemia UMCG00028  Female
+## 16   RNA-seq venous blood       Acute Myeloid Leukemia UMCG00003  Female
+## 17   RNA-seq venous blood       Acute Myeloid Leukemia UMCG00021  Female
+## 18   RNA-seq venous blood Chronic Lymphocytic Leukemia    110CLL  Female
+## 19   RNA-seq venous blood Chronic Lymphocytic Leukemia     12CLL  Female
+## 20   RNA-seq  enous blood Chronic Lymphocytic Leukemia   1525CLL    Male
+## 21   RNA-seq venous blood Chronic Lymphocytic Leukemia    182CLL Unknown
+## 22   RNA-seq venous blood Chronic Lymphocytic Leukemia      3CLL    Male
+## 23   RNA-seq venous blood Chronic Lymphocytic Leukemia   1228CLL    Male
+## 24   RNA-seq venous blood Chronic Lymphocytic Leukemia   1532CLL    Male
 ##    Output.format Quantitation.Level
 ## 1           RSEM               Gene
 ## 2           RSEM               Gene
@@ -268,10 +264,31 @@ Summary of DNA methylation data:
 ## 22          RSEM               Gene
 ## 23          RSEM               Gene
 ## 24          RSEM               Gene
-## 25          RSEM               Gene
-## 26          RSEM               Gene
-## 27          RSEM               Gene
-## 28          RSEM               Gene
+##                                                               File.name
+## 1  S00D5511.gene_quantification.rsem_grape2_crg.GRCh38.20151028.results
+## 2  S00D3911.gene_quantification.rsem_grape2_crg.GRCh38.20151028.results
+## 3  S00XUN11.gene_quantification.rsem_grape2_crg.GRCh38.20151028.results
+## 4  S00XYF11.gene_quantification.rsem_grape2_crg.GRCh38.20151028.results
+## 5  S013PY11.gene_quantification.rsem_grape2_crg.GRCh38.20151028.results
+## 6  S00Y1311.gene_quantification.rsem_grape2_crg.GRCh38.20151028.results
+## 7  S00XWJ11.gene_quantification.rsem_grape2_crg.GRCh38.20151028.results
+## 8  S013RU11.gene_quantification.rsem_grape2_crg.GRCh38.20160531.results
+## 9  S00D1D11.gene_quantification.rsem_grape2_crg.GRCh38.20151028.results
+## 10 S00D2B11.gene_quantification.rsem_grape2_crg.GRCh38.20151028.results
+## 11 S00Y0511.gene_quantification.rsem_grape2_crg.GRCh38.20151028.results
+## 12 S00D4711.gene_quantification.rsem_grape2_crg.GRCh38.20151028.results
+## 13 S00XVL11.gene_quantification.rsem_grape2_crg.GRCh38.20160531.results
+## 14 S013SS11.gene_quantification.rsem_grape2_crg.GRCh38.20151028.results
+## 15 S00Y6U11.gene_quantification.rsem_grape2_crg.GRCh38.20151028.results
+## 16 S00CWT11.gene_quantification.rsem_grape2_crg.GRCh38.20151028.results
+## 17 S00Y4Y11.gene_quantification.rsem_grape2_crg.GRCh38.20151028.results
+## 18 S00AYX11.gene_quantification.rsem_grape2_crg.GRCh38.20160531.results
+## 19 S00B0N11.gene_quantification.rsem_grape2_crg.GRCh38.20160531.results
+## 20 S00B2J11.gene_quantification.rsem_grape2_crg.GRCh38.20160531.results
+## 21 S00B1L11.gene_quantification.rsem_grape2_crg.GRCh38.20160531.results
+## 22 S00AXZ11.gene_quantification.rsem_grape2_crg.GRCh38.20160531.results
+## 23 S01FG411.gene_quantification.rsem_grape2_crg.GRCh38.20160531.results
+## 24 S00GPR11.gene_quantification.rsem_grape2_crg.GRCh38.20160531.results
 ```
 
 
