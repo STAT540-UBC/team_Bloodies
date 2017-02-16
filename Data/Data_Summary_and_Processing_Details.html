@@ -287,6 +287,30 @@ Quality report is available at RnBead website: <a href="http://www.medical-epige
 2). The trimmed reads were aligned to the cDNA reference transcriptome (GRCh38 cDNA sequences from Ensembl) using Bowtie v1.1.1 and the following parameters: -q -p 6 -a -m 100 –minins 0 –maxins 5000 –fr –sam –chunkmbs 200.<br />
 3). Duplicate reads were removed, and transcript levels were quantified with BitSeq v1.12.0. Transcript-level expression were estimated.</p>
 <p>Summary of DNA methylation data:</p>
+<pre><code>##   Data.type   GEO.ID                    File.name           Tissue
+## 1   RNA-seq GSE87195 GSE87195_rnaseq_ensT_all.csv Peripheral blood
+## 2   RNA-seq GSE87195 GSE87195_rnaseq_ensT_all.csv Peripheral blood
+## 3   RNA-seq GSE87195 GSE87195_rnaseq_ensT_all.csv Peripheral blood
+## 4   RNA-seq GSE87195 GSE87195_rnaseq_ensT_all.csv Peripheral blood
+## 5   RNA-seq GSE87195 GSE87195_rnaseq_ensT_all.csv Peripheral blood
+## 6   RNA-seq GSE87195 GSE87195_rnaseq_ensT_all.csv Peripheral blood
+## 7   RNA-seq GSE87195 GSE87195_rnaseq_ensT_all.csv Peripheral blood
+##   Population Number.of.cells            Platform
+## 1        HSC             100 Illumina HiSeq 2000
+## 2        MMP             100 Illumina HiSeq 2001
+## 3        CMP             100 Illumina HiSeq 2002
+## 4        CLP             100 Illumina HiSeq 2003
+## 5        MLP             100 Illumina HiSeq 2004
+## 6        GMP             100 Illumina HiSeq 2005
+## 7        MEP             100 Illumina HiSeq 2006
+##                      Data.format
+## 1 Differential expression result
+## 2 Differential expression result
+## 3 Differential expression result
+## 4 Differential expression result
+## 5 Differential expression result
+## 6 Differential expression result
+## 7 Differential expression result</code></pre>
 </div>
 <div id="rna-seq-for-leukemia-samples" class="section level2">
 <h2><strong>RNA-seq for leukemia samples</strong></h2>
@@ -298,6 +322,64 @@ Quality report is available at RnBead website: <a href="http://www.medical-epige
 Output files ( RSEM output format (<a href="http://deweylab.biostat.wisc.edu/rsem/rsem-calculate-expression.html#output" class="uri">http://deweylab.biostat.wisc.edu/rsem/rsem-calculate-expression.html#output</a>)):<br />
 ${prefix}.genes.results ${prefix}.isoforms.results</p>
 <p>Summary of DNA methylation data:</p>
+<pre><code>##    Data.type       Tissue                         Type  Donor.ID     Sex
+## 1    RNA-seq venous blood       Acute Myeloid Leukemia UMCG00006    Male
+## 2    RNA-seq venous blood       Acute Myeloid Leukemia UMCG00008  Female
+## 3    RNA-seq venous blood       Acute Myeloid Leukemia UMCG00024    Male
+## 4    RNA-seq venous blood       Acute Myeloid Leukemia UMCG00029    Male
+## 5    RNA-seq venous blood       Acute Myeloid Leukemia UMCG00016  Female
+## 6    RNA-seq venous blood       Acute Myeloid Leukemia UMCG00019    Male
+## 7    RNA-seq venous blood       Acute Myeloid Leukemia UMCG00026  Female
+## 8    RNA-seq venous blood       Acute Myeloid Leukemia UMCG00010  Female
+## 9    RNA-seq venous blood       Acute Myeloid Leukemia    S01BP2  Female
+## 10   RNA-seq venous blood       Acute Myeloid Leukemia UMCG00002  Female
+## 11   RNA-seq venous blood       Acute Myeloid Leukemia UMCG00005  Female
+## 12   RNA-seq venous blood       Acute Myeloid Leukemia UMCG00023  Female
+## 13   RNA-seq venous blood       Acute Myeloid Leukemia UMCG00004    Male
+## 14   RNA-seq venous blood       Acute Myeloid Leukemia UMCG00025    Male
+## 15   RNA-seq venous blood       Acute Myeloid Leukemia UMCG00009  Female
+## 16   RNA-seq venous blood       Acute Myeloid Leukemia UMCG00028  Female
+## 17   RNA-seq venous blood       Acute Myeloid Leukemia UMCG00003  Female
+## 18   RNA-seq venous blood       Acute Myeloid Leukemia UMCG00021  Female
+## 19   RNA-seq venous blood       Acute Myeloid Leukemia    S01BTV  Female
+## 20   RNA-seq venous blood       Acute Myeloid Leukemia    S01BVR  Female
+## 21   RNA-seq venous blood       Acute Myeloid Leukemia    S01BSX  Female
+## 22   RNA-seq venous blood Chronic Lymphocytic Leukemia    110CLL  Female
+## 23   RNA-seq venous blood Chronic Lymphocytic Leukemia     12CLL  Female
+## 24   RNA-seq  enous blood Chronic Lymphocytic Leukemia   1525CLL    Male
+## 25   RNA-seq venous blood Chronic Lymphocytic Leukemia    182CLL Unknown
+## 26   RNA-seq venous blood Chronic Lymphocytic Leukemia      3CLL    Male
+## 27   RNA-seq venous blood Chronic Lymphocytic Leukemia   1228CLL    Male
+## 28   RNA-seq venous blood Chronic Lymphocytic Leukemia   1532CLL    Male
+##    Output.format Quantitation.Level
+## 1           RSEM               Gene
+## 2           RSEM               Gene
+## 3           RSEM               Gene
+## 4           RSEM               Gene
+## 5           RSEM               Gene
+## 6           RSEM               Gene
+## 7           RSEM               Gene
+## 8           RSEM               Gene
+## 9           RSEM               Gene
+## 10          RSEM               Gene
+## 11          RSEM               Gene
+## 12          RSEM               Gene
+## 13          RSEM               Gene
+## 14          RSEM               Gene
+## 15          RSEM               Gene
+## 16          RSEM               Gene
+## 17          RSEM               Gene
+## 18          RSEM               Gene
+## 19          RSEM               Gene
+## 20          RSEM               Gene
+## 21          RSEM               Gene
+## 22          RSEM               Gene
+## 23          RSEM               Gene
+## 24          RSEM               Gene
+## 25          RSEM               Gene
+## 26          RSEM               Gene
+## 27          RSEM               Gene
+## 28          RSEM               Gene</code></pre>
 </div>
 </div>
 
