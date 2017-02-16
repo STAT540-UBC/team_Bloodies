@@ -7,9 +7,18 @@ output: html_document
 **Background & Motivation:** 
 Human hematopoietic cells capable of regenerating the lifelong production of all types of mature blood cells are applied to curative clinical therapies for numerous hematologic malignancies and congenital diseases [1]. Blood differentiation initiates at the level of multipotent stem cells and passes through a series of increasingly lineage-restricted progenitor intermidiates [2]. Due to the rarity of these progenitors and difficulties to obtain human samples, the mechanisms that regulate lineage commitment of human cells remain poorly understood. Transcription factors (TFs) and their interactions within gene regulatory networks are central to the intracellular decision making processes [3]. However, much remains to be learned about the way in which individual factors are connected within wider regulatory networks. Recent studies implicated that the chromatin state foreshadows transcriptional programs in differentiated cells [4][5][6]. Our overall hypothesis is that TFs binding to the active epigenomic regions play a pivotal role in the differentiation programs during early lineage commitment of HSCs. Our objective is to identify specific TFs primarily responsible for the differential gene expression in committed progenitors by combining epigenomic and transcriptomic data in seven hematopoietic stem/progenitor populations.  
 
-So far only two resources, the Canadian CEEHRC Network and the BluePrint Epigenome project have been available for comprehensive epigenomics of human blood cells. As part of the latter, Farlik M. et al recently generated DNA methylation profiles with RNA-seq data for HSC and six progenitor populations, which characterized differential DNA methylation at transcription factor binding sites (TFBSs) as cells commit to different lineages [6]. However, the TFBS database they used was from a collection of cell lines from various malignant/normal tissues, which might increased the noise for identification of true functional TFs in our targeted populations. Alternatively, we will use a motif enrichment analysis in the recognized active DNA methylation regions in the particular cell type [5][7]. In addition, their study mainly focused on DNA methylation at the promoter regions, however, it has been shown in mouse HSCs that DNA methylation at enhancers was more informative for lineage commitment prediction [4]. Therefore, we will also focus on enhancer regions by integrating the genomic information from the Ensembl Regulatory Build [8].
+So far only two resources, the Canadian CEEHRC Network and the BluePrint Epigenome project have been available for comprehensive epigenomics of human blood cells. As part of the latter, Farlik M. et al recently generated DNA methylation profiles with RNA-seq data for HSC and six progenitor populations, which characterized differential DNA methylation at transcription factor binding sites (TFBSs) as cells commit to different lineages [6]. However, the TFBS database they used was from a collection of cell lines from various malignant/normal tissues, which might increase the noise for identification of true functional TFs in our targeted populations. Alternatively, we will use a motif enrichment analysis in the recognized active DNA methylation regions in the particular cell type [5][7]. In addition, their study mainly focused on DNA methylation at the promoter regions, however, it has been shown in mouse HSCs that DNA methylation at enhancers was more informative for lineage commitment prediction [4]. Therefore, we will also focus on enhancer regions by integrating the genomic information from the Ensembl Regulatory Build [8].
 
 **Division of labor:**
+| Name | Initial work assignment | 
+| ------------- | ------------- |
+| Annie Cavalla | Section 3: TF binding site enrichment |
+| Rawnak Hoque  | Section 2: RNA-seq analysis of differentially expressed genes  
+| Somdeb Paul | Section 4: TF pattern function analysis
+| Fangwu Wang  | Section 1: DNA methylation analysis |
+
+All members will also have input into the poster on their area of expertise.
+
 
 **Datasets:**
 We will work with DNA methylation (bisulfite-seq) and RNA-seq data from the published BluePrint Epigenome project [6] which were downloaded from GEO (GSE 87197). All samples were collected from primary human peripheral blood cells in seven stem/progenitor populations: HSC, MPP, CMP, CLP, GMP, MEP, MLP. The DNA methylation data is alignment raw data at single base resolution and quality control of sequencing is available at RnBead website [9]. For each population, we chose one sample with multiple pools (technical replicates) based on donor age and data quality. The corresponding RNA-seq data from same populations (same tissue origin but not same donors) was obtained from GEO (GSE 87195). The data has been processed with differential expression analysis on transcript level and we will further quantify it on the gene level.
@@ -17,7 +26,7 @@ Since the BluePrint data does not have sample replicates within cell types, we w
 
 
 
-**Aims and Methodology:**
+**Aims and Methods:**
 
 1.Identify active DNA methylation regions and associate with genes: use RnBeads package to sum up the reads from all replicates and estimate methylation values (see suppl methods of the paper); quality control; differential methylation analysis with RnBeads; define (set threshold) and identify hypomethylated regions for each population; map regulatory regions (promoter, enhancer) to the hypomethylated regions; identify genes associated with the regulatory regions.
 
