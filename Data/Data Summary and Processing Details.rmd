@@ -16,7 +16,7 @@ Reference: Farlik M, Halbritter F, Müller F, Choudry FA et al. DNA Methylation 
 
 The DNA methylation profiles are available through GEO (Gene Expression Omnibus) in the alignment format. Due to large sizes, we can not deposit the data into GitHub team repo.  
 
-Samples: The paper generated small pools (10 cells, 50 cells, 100 cells) of DNA methylomes on each sample to increase the coverage and accuracy of detection. We chose one sample with multiple small pool profiles for each population, based on the age group and quality of data. Younger ages are prefered and the number and mean coverage of sites are taken into consideration for quality check.  
+Samples: The paper generated small pools (50 cells, 100 cells) of DNA methylomes on each sample to increase the coverage and accuracy of detection. We chose three samples (biological replicates) with multiple small pool profiles for each population. Younger ages are prefered and the number and mean coverage of sites are taken into consideration for quality check.  
 Quality report is available at RnBead website: http://www.medical-epigenomics.org/papers/BLUEPRINT_methylomes/data/rnbeads_reports/prog_v08_um_nsc/index.html
 
 Processing: The available DNA methylation data has been aligned and not quantitated. The procedure of raw data processing is from the supplementary methods of the reference paper.  
@@ -28,7 +28,7 @@ Processing: The available DNA methylation data has been aligned and not quantita
 
 Summary of DNA methylation data:
 ```{r echo = FALSE}
-a<-read.delim("/Users/fangwu/Documents/540/data/Data Summary-DNA.txt")
+a<-read.delim("/Users/fangwu/Documents/540/data/DNA.txt")
 library(knitr)
 kable(a)
 ```
@@ -36,6 +36,7 @@ kable(a)
 
 #Description of RNA-seq data: 
 
+##**RNA-seq for normal samples (matched to DNA methylation)**
 The RNA-seq data was from the same study and obtained from GEO (GSE87195). The only one data file "GSE87195_rnaseq_ensT_all.csv" was deposited under "Data" folder of our team repo. The raw data is not directly available for RNA-seq. The uploaded file has been almost fully processed and the output is the format after differential expression analysis using the BitSeq software. The data is quantified at transcript level with ENST IDs.
 
 Samples: This single file contains all seven populations of interest corresponding to the DNA methylation data with the same tissue origin.  
@@ -47,7 +48,33 @@ Processing:
 
 Summary of DNA methylation data:
 ```{r echo = FALSE}
-b<-read.delim("/Users/fangwu/Documents/540/data/Data Summary-RNA.txt")
+b<-read.delim("/Users/fangwu/Documents/540/data/RNA.txt")
 library(knitr)
 kable(b)
 ```
+
+##**RNA-seq for leukemia samples**
+
+Two types of leukemia samples--Acute myeloid leukemia and chromic lymphocytic leukemia--were derived from BluePrint Epigenome consortium: http://dcc.blueprint-epigenome.eu/#/experiments
+
+Processing:
+The GRAPE 2(https://github.com/guigolab/grape-nf) pipeline has been used to process the data. The used profile is STAR-RSEM, adapted from the ENCODE Long RNA-Seq pipeline (https://github.com/ENCODE-DCC/long-rna-seq-pipeline).  
+1). Mapping: The mapping step is performed using the [STAR] spliced aligner to map the RNA-seq reads to the references, which can be found in the Blueprint references FTP (ftp://ftp.ebi.ac.uk/pub/databases/blueprint/reference/20150407_reference_files).  
+2). Signal: In this step the STAR (https://github.com/alexdobin/STAR/) spliced aligner is used to produce signal files. The procedure is differentiated for strand-specific and non-strand-specific samples. For strand-specific data the signal from the two strands is separated. For non-strand-specific data the signal from the two strands is collapsed.   
+3). Contigs: In this step BEDtools (http://bedtools.readthedocs.org/en/latest) and the contigsNew Python script (https://github.com/guigolab/grape-nf/blob/develop/bin/contigsNew.py) are used to produce a BED file with the contig information. 
+4). Quantification: In this step RSEM (http://deweylab.biostat.wisc.edu/rsem/) is used to provide transcript and gene quantifications. A specific SAMtools version (https://github.com/emi80/samtools/tree/1.2-rglab-CRG) is used to systematically sort the reads as required by RSEM (http://deweylab.biostat.wisc.edu/rsem/) .  
+Output files ( RSEM output format (http://deweylab.biostat.wisc.edu/rsem/rsem-calculate-expression.html#output)):  
+${prefix}.genes.results
+${prefix}.isoforms.results
+
+Summary of DNA methylation data:
+```{r echo = FALSE}
+c<-read.delim("/Users/fangwu/Documents/540/data/RNA-L.txt")
+library(knitr)
+kable(c)
+```
+
+
+
+
+

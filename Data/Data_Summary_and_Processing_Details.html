@@ -126,7 +126,10 @@ $(document).ready(function () {
 <div id="TOC">
 <ul>
 <li><a href="#description-of-dna-methylation-data">Description of DNA methylation data:</a></li>
-<li><a href="#description-of-rna-seq-data">Description of RNA-seq data:</a></li>
+<li><a href="#description-of-rna-seq-data">Description of RNA-seq data:</a><ul>
+<li><a href="#rna-seq-for-normal-samples-matched-to-dna-methylation"><strong>RNA-seq for normal samples (matched to DNA methylation)</strong></a></li>
+<li><a href="#rna-seq-for-leukemia-samples"><strong>RNA-seq for leukemia samples</strong></a></li>
+</ul></li>
 </ul>
 </div>
 
@@ -135,7 +138,7 @@ $(document).ready(function () {
 <div id="description-of-dna-methylation-data" class="section level1">
 <h1>Description of DNA methylation data:</h1>
 <p>The DNA methylation profiles are available through GEO (Gene Expression Omnibus) in the alignment format. Due to large sizes, we can not deposit the data into GitHub team repo.</p>
-<p>Samples: The paper generated small pools (10 cells, 50 cells, 100 cells) of DNA methylomes on each sample to increase the coverage and accuracy of detection. We chose one sample with multiple small pool profiles for each population, based on the age group and quality of data. Younger ages are prefered and the number and mean coverage of sites are taken into consideration for quality check.<br />
+<p>Samples: The paper generated small pools (50 cells, 100 cells) of DNA methylomes on each sample to increase the coverage and accuracy of detection. We chose three samples (biological replicates) with multiple small pool profiles for each population. Younger ages are prefered and the number and mean coverage of sites are taken into consideration for quality check.<br />
 Quality report is available at RnBead website: <a href="http://www.medical-epigenomics.org/papers/BLUEPRINT_methylomes/data/rnbeads_reports/prog_v08_um_nsc/index.html" class="uri">http://www.medical-epigenomics.org/papers/BLUEPRINT_methylomes/data/rnbeads_reports/prog_v08_um_nsc/index.html</a></p>
 <p>Processing: The available DNA methylation data has been aligned and not quantitated. The procedure of raw data processing is from the supplementary methods of the reference paper.<br />
 1). Bisulfite sequencing was done by the Biomedical Sequencing Facility at CeMM using the 2x75bp paired-end setup on the Illumina HiSeq 3000/4000 platform.<br />
@@ -151,7 +154,8 @@ Quality report is available at RnBead website: <a href="http://www.medical-epige
 <th align="left">Name</th>
 <th align="left">Tissue</th>
 <th align="left">Population</th>
-<th align="left">Number.of.donors</th>
+<th align="right">Number.of.donors</th>
+<th align="right">Age.group</th>
 <th align="left">Gender</th>
 <th align="left">Platform</th>
 <th align="left">Data.Format</th>
@@ -160,57 +164,86 @@ Quality report is available at RnBead website: <a href="http://www.medical-epige
 <tbody>
 <tr class="odd">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324688</td>
-<td align="left">HSC_10_D10_1_R1</td>
+<td align="left">GSM2324702</td>
+<td align="left">HSC_50_D7_1_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">HSC</td>
-<td align="left">10 age group 50</td>
-<td align="left">Male</td>
+<td align="right">7</td>
+<td align="right">NA</td>
+<td align="left">Female</td>
 <td align="left">Illumina HiSeq 3000/4000</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="even">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324689</td>
-<td align="left">HSC_10_D10_2_R1</td>
+<td align="left">GSM2324703</td>
+<td align="left">HSC_50_D7_2_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">HSC</td>
-<td align="left">10 age group 50</td>
-<td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="right">7</td>
+<td align="right">NA</td>
+<td align="left">Female</td>
+<td align="left">Illumina HiSeq 3000/4001</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="odd">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324690</td>
-<td align="left">HSC_10_D10_3_R1</td>
+<td align="left">GSM2324704</td>
+<td align="left">HSC_1000_D7_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">HSC</td>
-<td align="left">10 age group 50</td>
-<td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="right">7</td>
+<td align="right">NA</td>
+<td align="left">Female</td>
+<td align="left">Illumina HiSeq 3000/4002</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="even">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324691</td>
-<td align="left">HSC_10_D10_4_R1</td>
+<td align="left">GSM2324708</td>
+<td align="left">HSC_10_D9_6_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">HSC</td>
-<td align="left">10 age group 50</td>
+<td align="right">9</td>
+<td align="right">60</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4003</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="odd">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324692</td>
-<td align="left">HSC_10_D10_7_R1</td>
+<td align="left">GSM2324709</td>
+<td align="left">HSC_10_D9_7_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">HSC</td>
-<td align="left">10 age group 50</td>
+<td align="right">9</td>
+<td align="right">NA</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4004</td>
+<td align="left">Alignment</td>
+</tr>
+<tr class="even">
+<td align="left">Bisulfite-seq</td>
+<td align="left">GSM2324710</td>
+<td align="left">HSC_50_D9_1_R1</td>
+<td align="left">peripheral blood</td>
+<td align="left">HSC</td>
+<td align="right">9</td>
+<td align="right">NA</td>
+<td align="left">Male</td>
+<td align="left">Illumina HiSeq 3000/4005</td>
+<td align="left">Alignment</td>
+</tr>
+<tr class="odd">
+<td align="left">Bisulfite-seq</td>
+<td align="left">GSM2324711</td>
+<td align="left">HSC_50_D9_2_R1</td>
+<td align="left">peripheral blood</td>
+<td align="left">HSC</td>
+<td align="right">9</td>
+<td align="right">NA</td>
+<td align="left">Male</td>
+<td align="left">Illumina HiSeq 3000/4006</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="even">
@@ -219,9 +252,10 @@ Quality report is available at RnBead website: <a href="http://www.medical-epige
 <td align="left">HSC_50_D10_1_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">HSC</td>
-<td align="left">10 age group 50</td>
+<td align="right">10</td>
+<td align="right">50</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4007</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="odd">
@@ -230,9 +264,10 @@ Quality report is available at RnBead website: <a href="http://www.medical-epige
 <td align="left">HSC_50_D10_2_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">HSC</td>
-<td align="left">10 age group 50</td>
+<td align="right">10</td>
+<td align="right">50</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4008</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="even">
@@ -241,97 +276,82 @@ Quality report is available at RnBead website: <a href="http://www.medical-epige
 <td align="left">HSC_1000_D10_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">HSC</td>
-<td align="left">10 age group 50</td>
+<td align="right">10</td>
+<td align="right">50</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4009</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="odd">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2325042</td>
-<td align="left">MPP_10_D9_1_R1</td>
+<td align="left">GSM2325039</td>
+<td align="left">MPP_50_D7_1_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">MPP</td>
-<td align="left">9 age group 60</td>
-<td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="right">7</td>
+<td align="right">NA</td>
+<td align="left">Female</td>
+<td align="left">Illumina HiSeq 3000/4010</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="even">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2325043</td>
-<td align="left">MPP_10_D9_2_R1</td>
+<td align="left">GSM2325040</td>
+<td align="left">MPP_50_D7_2_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">MPP</td>
-<td align="left">9 age group 60</td>
-<td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="right">7</td>
+<td align="right">NA</td>
+<td align="left">Female</td>
+<td align="left">Illumina HiSeq 3000/4011</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="odd">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2325044</td>
-<td align="left">MPP_10_D9_3_R1</td>
+<td align="left">GSM2325041</td>
+<td align="left">MPP_1000_D7_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">MPP</td>
-<td align="left">9 age group 60</td>
-<td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="right">7</td>
+<td align="right">NA</td>
+<td align="left">Female</td>
+<td align="left">Illumina HiSeq 3000/4012</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="even">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2325045</td>
-<td align="left">MPP_10_D9_4_R1</td>
+<td align="left">GSM2325061</td>
+<td align="left">MPP_50_D10_1_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">MPP</td>
-<td align="left">9 age group 60</td>
+<td align="right">10</td>
+<td align="right">NA</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4013</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="odd">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2325046</td>
-<td align="left">MPP_10_D9_5_R1</td>
+<td align="left">GSM2325062</td>
+<td align="left">MPP_50_D10_2_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">MPP</td>
-<td align="left">9 age group 60</td>
+<td align="right">10</td>
+<td align="right">NA</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4014</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="even">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2325047</td>
-<td align="left">MPP_10_D9_6_R1</td>
+<td align="left">GSM2325063</td>
+<td align="left">MPP_1000_D10_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">MPP</td>
-<td align="left">9 age group 60</td>
+<td align="right">10</td>
+<td align="right">NA</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
-<td align="left">Alignment</td>
-</tr>
-<tr class="odd">
-<td align="left">Bisulfite-seq</td>
-<td align="left">GSM2325048</td>
-<td align="left">MPP_10_D9_7_R1</td>
-<td align="left">peripheral blood</td>
-<td align="left">MPP</td>
-<td align="left">9 age group 60</td>
-<td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
-<td align="left">Alignment</td>
-</tr>
-<tr class="even">
-<td align="left">Bisulfite-seq</td>
-<td align="left">GSM2325049</td>
-<td align="left">MPP_10_D9_8_R1</td>
-<td align="left">peripheral blood</td>
-<td align="left">MPP</td>
-<td align="left">9 age group 60</td>
-<td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4015</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="odd">
@@ -340,9 +360,10 @@ Quality report is available at RnBead website: <a href="http://www.medical-epige
 <td align="left">MPP_50_D9_1_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">MPP</td>
-<td align="left">9 age group 60</td>
+<td align="right">9</td>
+<td align="right">60</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4016</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="even">
@@ -351,9 +372,10 @@ Quality report is available at RnBead website: <a href="http://www.medical-epige
 <td align="left">MPP_50_D9_2_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">MPP</td>
-<td align="left">9 age group 60</td>
+<td align="right">9</td>
+<td align="right">60</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4017</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="odd">
@@ -362,97 +384,82 @@ Quality report is available at RnBead website: <a href="http://www.medical-epige
 <td align="left">MPP_1000_D9_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">MPP</td>
-<td align="left">9 age group 60</td>
+<td align="right">9</td>
+<td align="right">60</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4018</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="even">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324538</td>
-<td align="left">CMP_10_D3_1_R1</td>
+<td align="left">GSM2324524</td>
+<td align="left">CMP_50_D2_1_R2</td>
 <td align="left">peripheral blood</td>
 <td align="left">CMP</td>
-<td align="left">3 age group 55</td>
+<td align="right">2</td>
+<td align="right">65</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4019</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="odd">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324539</td>
-<td align="left">CMP_10_D3_2_R1</td>
+<td align="left">GSM2324525</td>
+<td align="left">CMP_50_D2_2_R2</td>
 <td align="left">peripheral blood</td>
 <td align="left">CMP</td>
-<td align="left">3 age group 55</td>
+<td align="right">2</td>
+<td align="right">65</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4020</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="even">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324540</td>
-<td align="left">CMP_10_D3_3_R1</td>
+<td align="left">GSM2324526</td>
+<td align="left">CMP_1000_D2_R2</td>
 <td align="left">peripheral blood</td>
 <td align="left">CMP</td>
-<td align="left">3 age group 55</td>
+<td align="right">2</td>
+<td align="right">65</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4021</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="odd">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324541</td>
-<td align="left">CMP_10_D3_4_R1</td>
+<td align="left">GSM2324535</td>
+<td align="left">CMP_50_D1_1_R2</td>
 <td align="left">peripheral blood</td>
 <td align="left">CMP</td>
-<td align="left">3 age group 55</td>
+<td align="right">1</td>
+<td align="right">60</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4022</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="even">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324542</td>
-<td align="left">CMP_10_D3_5_R1</td>
+<td align="left">GSM2324536</td>
+<td align="left">CMP_50_D1_2_R2</td>
 <td align="left">peripheral blood</td>
 <td align="left">CMP</td>
-<td align="left">3 age group 55</td>
+<td align="right">1</td>
+<td align="right">60</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4023</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="odd">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324543</td>
-<td align="left">CMP_10_D3_6_R1</td>
+<td align="left">GSM2324537</td>
+<td align="left">CMP_1000_D1_R2</td>
 <td align="left">peripheral blood</td>
 <td align="left">CMP</td>
-<td align="left">3 age group 55</td>
+<td align="right">1</td>
+<td align="right">60</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
-<td align="left">Alignment</td>
-</tr>
-<tr class="even">
-<td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324544</td>
-<td align="left">CMP_10_D3_7_R1</td>
-<td align="left">peripheral blood</td>
-<td align="left">CMP</td>
-<td align="left">3 age group 55</td>
-<td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
-<td align="left">Alignment</td>
-</tr>
-<tr class="odd">
-<td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324545</td>
-<td align="left">CMP_10_D3_8_R1</td>
-<td align="left">peripheral blood</td>
-<td align="left">CMP</td>
-<td align="left">3 age group 55</td>
-<td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4024</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="even">
@@ -461,9 +468,10 @@ Quality report is available at RnBead website: <a href="http://www.medical-epige
 <td align="left">CMP_50_D3_1_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">CMP</td>
-<td align="left">3 age group 55</td>
+<td align="right">3</td>
+<td align="right">55</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4025</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="odd">
@@ -472,9 +480,10 @@ Quality report is available at RnBead website: <a href="http://www.medical-epige
 <td align="left">CMP_50_D3_2_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">CMP</td>
-<td align="left">3 age group 55</td>
+<td align="right">3</td>
+<td align="right">55</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4026</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="even">
@@ -483,97 +492,82 @@ Quality report is available at RnBead website: <a href="http://www.medical-epige
 <td align="left">CMP_1000_D3_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">CMP</td>
-<td align="left">3 age group 55</td>
+<td align="right">3</td>
+<td align="right">55</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4027</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="odd">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324712</td>
-<td align="left">MEP_10_D2_1_R2</td>
+<td align="left">GSM2324741</td>
+<td align="left">MEP_50_D3_1_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">MEP</td>
-<td align="left">2 age group 45</td>
-<td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="right">3</td>
+<td align="right">70</td>
+<td align="left">Female</td>
+<td align="left">Illumina HiSeq 3000/4028</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="even">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324713</td>
-<td align="left">MEP_10_D2_2_R2</td>
+<td align="left">GSM2324742</td>
+<td align="left">MEP_50_D3_2_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">MEP</td>
-<td align="left">2 age group 45</td>
-<td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="right">3</td>
+<td align="right">70</td>
+<td align="left">Female</td>
+<td align="left">Illumina HiSeq 3000/4029</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="odd">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324714</td>
-<td align="left">MEP_10_D2_3_R2</td>
+<td align="left">GSM2324743</td>
+<td align="left">MEP_1000_D3_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">MEP</td>
-<td align="left">2 age group 45</td>
-<td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="right">3</td>
+<td align="right">70</td>
+<td align="left">Female</td>
+<td align="left">Illumina HiSeq 3000/4030</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="even">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324715</td>
-<td align="left">MEP_10_D2_4_R2</td>
+<td align="left">GSM2324730</td>
+<td align="left">MEP_10_D1_8_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">MEP</td>
-<td align="left">2 age group 45</td>
+<td align="right">1</td>
+<td align="right">60</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4031</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="odd">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324716</td>
-<td align="left">MEP_10_D2_5_R2</td>
+<td align="left">GSM2324731</td>
+<td align="left">MEP_50_D1_1_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">MEP</td>
-<td align="left">2 age group 45</td>
+<td align="right">1</td>
+<td align="right">60</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4032</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="even">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324717</td>
-<td align="left">MEP_10_D2_6_R2</td>
+<td align="left">GSM2324732</td>
+<td align="left">MEP_50_D1_2_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">MEP</td>
-<td align="left">2 age group 45</td>
+<td align="right">1</td>
+<td align="right">60</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
-<td align="left">Alignment</td>
-</tr>
-<tr class="odd">
-<td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324718</td>
-<td align="left">MEP_10_D2_7_R2</td>
-<td align="left">peripheral blood</td>
-<td align="left">MEP</td>
-<td align="left">2 age group 45</td>
-<td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
-<td align="left">Alignment</td>
-</tr>
-<tr class="even">
-<td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324719</td>
-<td align="left">MEP_10_D2_8_R2</td>
-<td align="left">peripheral blood</td>
-<td align="left">MEP</td>
-<td align="left">2 age group 45</td>
-<td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4033</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="odd">
@@ -582,9 +576,10 @@ Quality report is available at RnBead website: <a href="http://www.medical-epige
 <td align="left">MEP_50_D2_1_R2</td>
 <td align="left">peripheral blood</td>
 <td align="left">MEP</td>
-<td align="left">2 age group 45</td>
+<td align="right">2</td>
+<td align="right">45</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4034</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="even">
@@ -593,9 +588,10 @@ Quality report is available at RnBead website: <a href="http://www.medical-epige
 <td align="left">MEP_50_D2_2_R2</td>
 <td align="left">peripheral blood</td>
 <td align="left">MEP</td>
-<td align="left">2 age group 45</td>
+<td align="right">2</td>
+<td align="right">45</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4035</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="odd">
@@ -604,97 +600,82 @@ Quality report is available at RnBead website: <a href="http://www.medical-epige
 <td align="left">MEP_1000_D2_R2</td>
 <td align="left">peripheral blood</td>
 <td align="left">MEP</td>
-<td align="left">2 age group 45</td>
+<td align="right">2</td>
+<td align="right">45</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4036</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="even">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324475</td>
-<td align="left">CLP_10_D2_1_R1</td>
+<td align="left">GSM2324472</td>
+<td align="left">CLP_50_D1_1_R2</td>
 <td align="left">peripheral blood</td>
 <td align="left">CLP</td>
-<td align="left">2 age group 60</td>
+<td align="right">1</td>
+<td align="right">65</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4037</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="odd">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324476</td>
-<td align="left">CLP_10_D2_2_R1</td>
+<td align="left">GSM2324473</td>
+<td align="left">CLP_50_D1_2_R2</td>
 <td align="left">peripheral blood</td>
 <td align="left">CLP</td>
-<td align="left">2 age group 60</td>
+<td align="right">1</td>
+<td align="right">65</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4038</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="even">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324477</td>
-<td align="left">CLP_10_D2_3_R1</td>
+<td align="left">GSM2324474</td>
+<td align="left">CLP_1000_D1_R2</td>
 <td align="left">peripheral blood</td>
 <td align="left">CLP</td>
-<td align="left">2 age group 60</td>
+<td align="right">1</td>
+<td align="right">65</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4039</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="odd">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324478</td>
-<td align="left">CLP_10_D2_4_R1</td>
+<td align="left">GSM2324493</td>
+<td align="left">CLP_10_D3_8_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">CLP</td>
-<td align="left">2 age group 60</td>
-<td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="right">3</td>
+<td align="right">NA</td>
+<td align="left">Female</td>
+<td align="left">Illumina HiSeq 3000/4040</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="even">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324479</td>
-<td align="left">CLP_10_D2_5_R1</td>
+<td align="left">GSM2324494</td>
+<td align="left">CLP_50_D3_1_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">CLP</td>
-<td align="left">2 age group 60</td>
-<td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="right">3</td>
+<td align="right">NA</td>
+<td align="left">Female</td>
+<td align="left">Illumina HiSeq 3000/4041</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="odd">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324480</td>
-<td align="left">CLP_10_D2_6_R1</td>
+<td align="left">GSM2324495</td>
+<td align="left">CLP_50_D3_2_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">CLP</td>
-<td align="left">2 age group 60</td>
-<td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
-<td align="left">Alignment</td>
-</tr>
-<tr class="even">
-<td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324481</td>
-<td align="left">CLP_10_D2_7_R1</td>
-<td align="left">peripheral blood</td>
-<td align="left">CLP</td>
-<td align="left">2 age group 60</td>
-<td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
-<td align="left">Alignment</td>
-</tr>
-<tr class="odd">
-<td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324482</td>
-<td align="left">CLP_10_D2_8_R1</td>
-<td align="left">peripheral blood</td>
-<td align="left">CLP</td>
-<td align="left">2 age group 60</td>
-<td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="right">3</td>
+<td align="right">NA</td>
+<td align="left">Female</td>
+<td align="left">Illumina HiSeq 3000/4042</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="even">
@@ -703,9 +684,10 @@ Quality report is available at RnBead website: <a href="http://www.medical-epige
 <td align="left">CLP_50_D2_1_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">CLP</td>
-<td align="left">2 age group 60</td>
+<td align="right">2</td>
+<td align="right">60</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4043</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="odd">
@@ -714,9 +696,10 @@ Quality report is available at RnBead website: <a href="http://www.medical-epige
 <td align="left">CLP_50_D2_2_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">CLP</td>
-<td align="left">2 age group 60</td>
+<td align="right">2</td>
+<td align="right">60</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4044</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="even">
@@ -725,97 +708,82 @@ Quality report is available at RnBead website: <a href="http://www.medical-epige
 <td align="left">CLP_1000_D2_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">CLP</td>
-<td align="left">2 age group 60</td>
+<td align="right">2</td>
+<td align="right">60</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4045</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="odd">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324571</td>
-<td align="left">GMP_10_D1_1_R1</td>
+<td align="left">GSM2324601</td>
+<td align="left">GMP_50_D3_1_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">GMP</td>
-<td align="left">1 age group 50</td>
+<td align="right">3</td>
+<td align="right">NA</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4046</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="even">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324572</td>
-<td align="left">GMP_10_D1_2_R1</td>
+<td align="left">GSM2324602</td>
+<td align="left">GMP_50_D3_2_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">GMP</td>
-<td align="left">1 age group 50</td>
+<td align="right">3</td>
+<td align="right">NA</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4047</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="odd">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324573</td>
-<td align="left">GMP_10_D1_3_R1</td>
+<td align="left">GSM2324603</td>
+<td align="left">GMP_1000_D3_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">GMP</td>
-<td align="left">1 age group 50</td>
+<td align="right">3</td>
+<td align="right">NA</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4048</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="even">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324574</td>
-<td align="left">GMP_10_D1_4_R1</td>
+<td align="left">GSM2324590</td>
+<td align="left">GMP_50_D2_1_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">GMP</td>
-<td align="left">1 age group 50</td>
+<td align="right">2</td>
+<td align="right">NA</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4049</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="odd">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324575</td>
-<td align="left">GMP_10_D1_5_R1</td>
+<td align="left">GSM2324591</td>
+<td align="left">GMP_50_D2_2_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">GMP</td>
-<td align="left">1 age group 50</td>
+<td align="right">2</td>
+<td align="right">NA</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4050</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="even">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324576</td>
-<td align="left">GMP_10_D1_6_R1</td>
+<td align="left">GSM2324592</td>
+<td align="left">GMP_1000_D2_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">GMP</td>
-<td align="left">1 age group 50</td>
+<td align="right">2</td>
+<td align="right">NA</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
-<td align="left">Alignment</td>
-</tr>
-<tr class="odd">
-<td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324577</td>
-<td align="left">GMP_10_D1_7_R1</td>
-<td align="left">peripheral blood</td>
-<td align="left">GMP</td>
-<td align="left">1 age group 50</td>
-<td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
-<td align="left">Alignment</td>
-</tr>
-<tr class="even">
-<td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324578</td>
-<td align="left">GMP_10_D1_8_R1</td>
-<td align="left">peripheral blood</td>
-<td align="left">GMP</td>
-<td align="left">1 age group 50</td>
-<td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4051</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="odd">
@@ -824,9 +792,10 @@ Quality report is available at RnBead website: <a href="http://www.medical-epige
 <td align="left">GMP_50_D1_1_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">GMP</td>
-<td align="left">1 age group 50</td>
+<td align="right">1</td>
+<td align="right">50</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4052</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="even">
@@ -835,9 +804,10 @@ Quality report is available at RnBead website: <a href="http://www.medical-epige
 <td align="left">GMP_50_D1_2_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">GMP</td>
-<td align="left">1 age group 50</td>
+<td align="right">1</td>
+<td align="right">50</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4053</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="odd">
@@ -846,97 +816,82 @@ Quality report is available at RnBead website: <a href="http://www.medical-epige
 <td align="left">GMP_1000_D1_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">GMP</td>
-<td align="left">1 age group 50</td>
+<td align="right">1</td>
+<td align="right">50</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4054</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="even">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324871</td>
-<td align="left">MLP1_10_D3_1_R1</td>
+<td align="left">GSM2324901</td>
+<td align="left">MLP1_50_D1_1_R2</td>
 <td align="left">peripheral blood</td>
 <td align="left">MLP</td>
-<td align="left">3 age group 40</td>
+<td align="right">1</td>
+<td align="right">55</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4055</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="odd">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324872</td>
-<td align="left">MLP1_10_D3_2_R1</td>
+<td align="left">GSM2324902</td>
+<td align="left">MLP1_50_D1_2_R2</td>
 <td align="left">peripheral blood</td>
 <td align="left">MLP</td>
-<td align="left">3 age group 40</td>
+<td align="right">1</td>
+<td align="right">55</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4056</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="even">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324873</td>
-<td align="left">MLP1_10_D3_3_R1</td>
+<td align="left">GSM2324903</td>
+<td align="left">MLP1_1000_D1_R2</td>
 <td align="left">peripheral blood</td>
 <td align="left">MLP</td>
-<td align="left">3 age group 40</td>
+<td align="right">1</td>
+<td align="right">55</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4057</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="odd">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324874</td>
-<td align="left">MLP1_10_D3_4_R1</td>
+<td align="left">GSM2324890</td>
+<td align="left">MLP1_50_D2_1_R2</td>
 <td align="left">peripheral blood</td>
 <td align="left">MLP</td>
-<td align="left">3 age group 40</td>
-<td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="right">2</td>
+<td align="right">NA</td>
+<td align="left">Female</td>
+<td align="left">Illumina HiSeq 3000/4058</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="even">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324875</td>
-<td align="left">MLP1_10_D3_5_R1</td>
+<td align="left">GSM2324891</td>
+<td align="left">MLP1_50_D2_2_R2</td>
 <td align="left">peripheral blood</td>
 <td align="left">MLP</td>
-<td align="left">3 age group 40</td>
-<td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="right">2</td>
+<td align="right">NA</td>
+<td align="left">Female</td>
+<td align="left">Illumina HiSeq 3000/4059</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="odd">
 <td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324876</td>
-<td align="left">MLP1_10_D3_6_R1</td>
+<td align="left">GSM2324892</td>
+<td align="left">MLP1_1000_D2_R2</td>
 <td align="left">peripheral blood</td>
 <td align="left">MLP</td>
-<td align="left">3 age group 40</td>
-<td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
-<td align="left">Alignment</td>
-</tr>
-<tr class="even">
-<td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324877</td>
-<td align="left">MLP1_10_D3_7_R1</td>
-<td align="left">peripheral blood</td>
-<td align="left">MLP</td>
-<td align="left">3 age group 40</td>
-<td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
-<td align="left">Alignment</td>
-</tr>
-<tr class="odd">
-<td align="left">Bisulfite-seq</td>
-<td align="left">GSM2324878</td>
-<td align="left">MLP1_10_D3_8_R1</td>
-<td align="left">peripheral blood</td>
-<td align="left">MLP</td>
-<td align="left">3 age group 40</td>
-<td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="right">2</td>
+<td align="right">NA</td>
+<td align="left">Female</td>
+<td align="left">Illumina HiSeq 3000/4060</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="even">
@@ -945,9 +900,10 @@ Quality report is available at RnBead website: <a href="http://www.medical-epige
 <td align="left">MLP1_50_D3_1_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">MLP</td>
-<td align="left">3 age group 40</td>
+<td align="right">3</td>
+<td align="right">40</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4061</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="odd">
@@ -956,9 +912,10 @@ Quality report is available at RnBead website: <a href="http://www.medical-epige
 <td align="left">MLP1_50_D3_2_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">MLP</td>
-<td align="left">3 age group 40</td>
+<td align="right">3</td>
+<td align="right">40</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4062</td>
 <td align="left">Alignment</td>
 </tr>
 <tr class="even">
@@ -967,9 +924,10 @@ Quality report is available at RnBead website: <a href="http://www.medical-epige
 <td align="left">MLP1_1000_D3_R1</td>
 <td align="left">peripheral blood</td>
 <td align="left">MLP</td>
-<td align="left">3 age group 40</td>
+<td align="right">3</td>
+<td align="right">40</td>
 <td align="left">Male</td>
-<td align="left">Illumina HiSeq 3000/4000</td>
+<td align="left">Illumina HiSeq 3000/4063</td>
 <td align="left">Alignment</td>
 </tr>
 </tbody>
@@ -977,6 +935,8 @@ Quality report is available at RnBead website: <a href="http://www.medical-epige
 </div>
 <div id="description-of-rna-seq-data" class="section level1">
 <h1>Description of RNA-seq data:</h1>
+<div id="rna-seq-for-normal-samples-matched-to-dna-methylation" class="section level2">
+<h2><strong>RNA-seq for normal samples (matched to DNA methylation)</strong></h2>
 <p>The RNA-seq data was from the same study and obtained from GEO (GSE87195). The only one data file “GSE87195_rnaseq_ensT_all.csv” was deposited under “Data” folder of our team repo. The raw data is not directly available for RNA-seq. The uploaded file has been almost fully processed and the output is the format after differential expression analysis using the BitSeq software. The data is quantified at transcript level with ENST IDs.</p>
 <p>Samples: This single file contains all seven populations of interest corresponding to the DNA methylation data with the same tissue origin.</p>
 <p>Processing: 1). After RNA-seq on Illumina HiSeq 2000 platform, sequencing adapter fragments were trimmed using Trimmomatic v0.32.<br />
@@ -987,96 +947,367 @@ Quality report is available at RnBead website: <a href="http://www.medical-epige
 <thead>
 <tr class="header">
 <th align="left">Data.type</th>
+<th align="left">GEO.ID</th>
 <th align="left">File.name</th>
 <th align="left">Tissue</th>
 <th align="left">Population</th>
 <th align="right">Number.of.cells</th>
 <th align="left">Platform</th>
 <th align="left">Data.format</th>
-<th align="right">No.Columns</th>
-<th align="right">No.Rows</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="left">RNA-seq</td>
+<td align="left">GSE87195</td>
 <td align="left">GSE87195_rnaseq_ensT_all.csv</td>
 <td align="left">Peripheral blood</td>
 <td align="left">HSC</td>
 <td align="right">100</td>
 <td align="left">Illumina HiSeq 2000</td>
 <td align="left">Differential expression result</td>
-<td align="right">14</td>
-<td align="right">62590</td>
 </tr>
 <tr class="even">
-<td align="left"></td>
-<td align="left"></td>
+<td align="left">RNA-seq</td>
+<td align="left">GSE87195</td>
+<td align="left">GSE87195_rnaseq_ensT_all.csv</td>
 <td align="left">Peripheral blood</td>
 <td align="left">MMP</td>
 <td align="right">100</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="right">NA</td>
-<td align="right">NA</td>
+<td align="left">Illumina HiSeq 2001</td>
+<td align="left">Differential expression result</td>
 </tr>
 <tr class="odd">
-<td align="left"></td>
-<td align="left"></td>
+<td align="left">RNA-seq</td>
+<td align="left">GSE87195</td>
+<td align="left">GSE87195_rnaseq_ensT_all.csv</td>
 <td align="left">Peripheral blood</td>
 <td align="left">CMP</td>
 <td align="right">100</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="right">NA</td>
-<td align="right">NA</td>
+<td align="left">Illumina HiSeq 2002</td>
+<td align="left">Differential expression result</td>
 </tr>
 <tr class="even">
-<td align="left"></td>
-<td align="left"></td>
+<td align="left">RNA-seq</td>
+<td align="left">GSE87195</td>
+<td align="left">GSE87195_rnaseq_ensT_all.csv</td>
 <td align="left">Peripheral blood</td>
 <td align="left">CLP</td>
 <td align="right">100</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="right">NA</td>
-<td align="right">NA</td>
+<td align="left">Illumina HiSeq 2003</td>
+<td align="left">Differential expression result</td>
 </tr>
 <tr class="odd">
-<td align="left"></td>
-<td align="left"></td>
+<td align="left">RNA-seq</td>
+<td align="left">GSE87195</td>
+<td align="left">GSE87195_rnaseq_ensT_all.csv</td>
 <td align="left">Peripheral blood</td>
 <td align="left">MLP</td>
 <td align="right">100</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="right">NA</td>
-<td align="right">NA</td>
+<td align="left">Illumina HiSeq 2004</td>
+<td align="left">Differential expression result</td>
 </tr>
 <tr class="even">
-<td align="left"></td>
-<td align="left"></td>
+<td align="left">RNA-seq</td>
+<td align="left">GSE87195</td>
+<td align="left">GSE87195_rnaseq_ensT_all.csv</td>
 <td align="left">Peripheral blood</td>
 <td align="left">GMP</td>
 <td align="right">100</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="right">NA</td>
-<td align="right">NA</td>
+<td align="left">Illumina HiSeq 2005</td>
+<td align="left">Differential expression result</td>
 </tr>
 <tr class="odd">
-<td align="left"></td>
-<td align="left"></td>
+<td align="left">RNA-seq</td>
+<td align="left">GSE87195</td>
+<td align="left">GSE87195_rnaseq_ensT_all.csv</td>
 <td align="left">Peripheral blood</td>
 <td align="left">MEP</td>
 <td align="right">100</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="right">NA</td>
-<td align="right">NA</td>
+<td align="left">Illumina HiSeq 2006</td>
+<td align="left">Differential expression result</td>
 </tr>
 </tbody>
 </table>
+</div>
+<div id="rna-seq-for-leukemia-samples" class="section level2">
+<h2><strong>RNA-seq for leukemia samples</strong></h2>
+<p>Two types of leukemia samples–Acute myeloid leukemia and chromic lymphocytic leukemia–were derived from BluePrint Epigenome consortium: <a href="http://dcc.blueprint-epigenome.eu/#/experiments" class="uri">http://dcc.blueprint-epigenome.eu/#/experiments</a></p>
+<p>Processing: The GRAPE 2(<a href="https://github.com/guigolab/grape-nf" class="uri">https://github.com/guigolab/grape-nf</a>) pipeline has been used to process the data. The used profile is STAR-RSEM, adapted from the ENCODE Long RNA-Seq pipeline (<a href="https://github.com/ENCODE-DCC/long-rna-seq-pipeline" class="uri">https://github.com/ENCODE-DCC/long-rna-seq-pipeline</a>).<br />
+1). Mapping: The mapping step is performed using the [STAR] spliced aligner to map the RNA-seq reads to the references, which can be found in the Blueprint references FTP (<a href="ftp://ftp.ebi.ac.uk/pub/databases/blueprint/reference/20150407_reference_files" class="uri">ftp://ftp.ebi.ac.uk/pub/databases/blueprint/reference/20150407_reference_files</a>).<br />
+2). Signal: In this step the STAR (<a href="https://github.com/alexdobin/STAR/" class="uri">https://github.com/alexdobin/STAR/</a>) spliced aligner is used to produce signal files. The procedure is differentiated for strand-specific and non-strand-specific samples. For strand-specific data the signal from the two strands is separated. For non-strand-specific data the signal from the two strands is collapsed.<br />
+3). Contigs: In this step BEDtools (<a href="http://bedtools.readthedocs.org/en/latest" class="uri">http://bedtools.readthedocs.org/en/latest</a>) and the contigsNew Python script (<a href="https://github.com/guigolab/grape-nf/blob/develop/bin/contigsNew.py" class="uri">https://github.com/guigolab/grape-nf/blob/develop/bin/contigsNew.py</a>) are used to produce a BED file with the contig information. 4). Quantification: In this step RSEM (<a href="http://deweylab.biostat.wisc.edu/rsem/" class="uri">http://deweylab.biostat.wisc.edu/rsem/</a>) is used to provide transcript and gene quantifications. A specific SAMtools version (<a href="https://github.com/emi80/samtools/tree/1.2-rglab-CRG" class="uri">https://github.com/emi80/samtools/tree/1.2-rglab-CRG</a>) is used to systematically sort the reads as required by RSEM (<a href="http://deweylab.biostat.wisc.edu/rsem/" class="uri">http://deweylab.biostat.wisc.edu/rsem/</a>) .<br />
+Output files ( RSEM output format (<a href="http://deweylab.biostat.wisc.edu/rsem/rsem-calculate-expression.html#output" class="uri">http://deweylab.biostat.wisc.edu/rsem/rsem-calculate-expression.html#output</a>)):<br />
+${prefix}.genes.results ${prefix}.isoforms.results</p>
+<p>Summary of DNA methylation data:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Data.type</th>
+<th align="left">Tissue</th>
+<th align="left">Type</th>
+<th align="left">Donor.ID</th>
+<th align="left">Sex</th>
+<th align="left">Output.format</th>
+<th align="left">Quantitation.Level</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">RNA-seq</td>
+<td align="left">venous blood</td>
+<td align="left">Acute Myeloid Leukemia</td>
+<td align="left">UMCG00006</td>
+<td align="left">Male</td>
+<td align="left">RSEM</td>
+<td align="left">Gene</td>
+</tr>
+<tr class="even">
+<td align="left">RNA-seq</td>
+<td align="left">venous blood</td>
+<td align="left">Acute Myeloid Leukemia</td>
+<td align="left">UMCG00008</td>
+<td align="left">Female</td>
+<td align="left">RSEM</td>
+<td align="left">Gene</td>
+</tr>
+<tr class="odd">
+<td align="left">RNA-seq</td>
+<td align="left">venous blood</td>
+<td align="left">Acute Myeloid Leukemia</td>
+<td align="left">UMCG00024</td>
+<td align="left">Male</td>
+<td align="left">RSEM</td>
+<td align="left">Gene</td>
+</tr>
+<tr class="even">
+<td align="left">RNA-seq</td>
+<td align="left">venous blood</td>
+<td align="left">Acute Myeloid Leukemia</td>
+<td align="left">UMCG00029</td>
+<td align="left">Male</td>
+<td align="left">RSEM</td>
+<td align="left">Gene</td>
+</tr>
+<tr class="odd">
+<td align="left">RNA-seq</td>
+<td align="left">venous blood</td>
+<td align="left">Acute Myeloid Leukemia</td>
+<td align="left">UMCG00016</td>
+<td align="left">Female</td>
+<td align="left">RSEM</td>
+<td align="left">Gene</td>
+</tr>
+<tr class="even">
+<td align="left">RNA-seq</td>
+<td align="left">venous blood</td>
+<td align="left">Acute Myeloid Leukemia</td>
+<td align="left">UMCG00019</td>
+<td align="left">Male</td>
+<td align="left">RSEM</td>
+<td align="left">Gene</td>
+</tr>
+<tr class="odd">
+<td align="left">RNA-seq</td>
+<td align="left">venous blood</td>
+<td align="left">Acute Myeloid Leukemia</td>
+<td align="left">UMCG00026</td>
+<td align="left">Female</td>
+<td align="left">RSEM</td>
+<td align="left">Gene</td>
+</tr>
+<tr class="even">
+<td align="left">RNA-seq</td>
+<td align="left">venous blood</td>
+<td align="left">Acute Myeloid Leukemia</td>
+<td align="left">UMCG00010</td>
+<td align="left">Female</td>
+<td align="left">RSEM</td>
+<td align="left">Gene</td>
+</tr>
+<tr class="odd">
+<td align="left">RNA-seq</td>
+<td align="left">venous blood</td>
+<td align="left">Acute Myeloid Leukemia</td>
+<td align="left">S01BP2</td>
+<td align="left">Female</td>
+<td align="left">RSEM</td>
+<td align="left">Gene</td>
+</tr>
+<tr class="even">
+<td align="left">RNA-seq</td>
+<td align="left">venous blood</td>
+<td align="left">Acute Myeloid Leukemia</td>
+<td align="left">UMCG00002</td>
+<td align="left">Female</td>
+<td align="left">RSEM</td>
+<td align="left">Gene</td>
+</tr>
+<tr class="odd">
+<td align="left">RNA-seq</td>
+<td align="left">venous blood</td>
+<td align="left">Acute Myeloid Leukemia</td>
+<td align="left">UMCG00005</td>
+<td align="left">Female</td>
+<td align="left">RSEM</td>
+<td align="left">Gene</td>
+</tr>
+<tr class="even">
+<td align="left">RNA-seq</td>
+<td align="left">venous blood</td>
+<td align="left">Acute Myeloid Leukemia</td>
+<td align="left">UMCG00023</td>
+<td align="left">Female</td>
+<td align="left">RSEM</td>
+<td align="left">Gene</td>
+</tr>
+<tr class="odd">
+<td align="left">RNA-seq</td>
+<td align="left">venous blood</td>
+<td align="left">Acute Myeloid Leukemia</td>
+<td align="left">UMCG00004</td>
+<td align="left">Male</td>
+<td align="left">RSEM</td>
+<td align="left">Gene</td>
+</tr>
+<tr class="even">
+<td align="left">RNA-seq</td>
+<td align="left">venous blood</td>
+<td align="left">Acute Myeloid Leukemia</td>
+<td align="left">UMCG00025</td>
+<td align="left">Male</td>
+<td align="left">RSEM</td>
+<td align="left">Gene</td>
+</tr>
+<tr class="odd">
+<td align="left">RNA-seq</td>
+<td align="left">venous blood</td>
+<td align="left">Acute Myeloid Leukemia</td>
+<td align="left">UMCG00009</td>
+<td align="left">Female</td>
+<td align="left">RSEM</td>
+<td align="left">Gene</td>
+</tr>
+<tr class="even">
+<td align="left">RNA-seq</td>
+<td align="left">venous blood</td>
+<td align="left">Acute Myeloid Leukemia</td>
+<td align="left">UMCG00028</td>
+<td align="left">Female</td>
+<td align="left">RSEM</td>
+<td align="left">Gene</td>
+</tr>
+<tr class="odd">
+<td align="left">RNA-seq</td>
+<td align="left">venous blood</td>
+<td align="left">Acute Myeloid Leukemia</td>
+<td align="left">UMCG00003</td>
+<td align="left">Female</td>
+<td align="left">RSEM</td>
+<td align="left">Gene</td>
+</tr>
+<tr class="even">
+<td align="left">RNA-seq</td>
+<td align="left">venous blood</td>
+<td align="left">Acute Myeloid Leukemia</td>
+<td align="left">UMCG00021</td>
+<td align="left">Female</td>
+<td align="left">RSEM</td>
+<td align="left">Gene</td>
+</tr>
+<tr class="odd">
+<td align="left">RNA-seq</td>
+<td align="left">venous blood</td>
+<td align="left">Acute Myeloid Leukemia</td>
+<td align="left">S01BTV</td>
+<td align="left">Female</td>
+<td align="left">RSEM</td>
+<td align="left">Gene</td>
+</tr>
+<tr class="even">
+<td align="left">RNA-seq</td>
+<td align="left">venous blood</td>
+<td align="left">Acute Myeloid Leukemia</td>
+<td align="left">S01BVR</td>
+<td align="left">Female</td>
+<td align="left">RSEM</td>
+<td align="left">Gene</td>
+</tr>
+<tr class="odd">
+<td align="left">RNA-seq</td>
+<td align="left">venous blood</td>
+<td align="left">Acute Myeloid Leukemia</td>
+<td align="left">S01BSX</td>
+<td align="left">Female</td>
+<td align="left">RSEM</td>
+<td align="left">Gene</td>
+</tr>
+<tr class="even">
+<td align="left">RNA-seq</td>
+<td align="left">venous blood</td>
+<td align="left">Chronic Lymphocytic Leukemia</td>
+<td align="left">110CLL</td>
+<td align="left">Female</td>
+<td align="left">RSEM</td>
+<td align="left">Gene</td>
+</tr>
+<tr class="odd">
+<td align="left">RNA-seq</td>
+<td align="left">venous blood</td>
+<td align="left">Chronic Lymphocytic Leukemia</td>
+<td align="left">12CLL</td>
+<td align="left">Female</td>
+<td align="left">RSEM</td>
+<td align="left">Gene</td>
+</tr>
+<tr class="even">
+<td align="left">RNA-seq</td>
+<td align="left">enous blood</td>
+<td align="left">Chronic Lymphocytic Leukemia</td>
+<td align="left">1525CLL</td>
+<td align="left">Male</td>
+<td align="left">RSEM</td>
+<td align="left">Gene</td>
+</tr>
+<tr class="odd">
+<td align="left">RNA-seq</td>
+<td align="left">venous blood</td>
+<td align="left">Chronic Lymphocytic Leukemia</td>
+<td align="left">182CLL</td>
+<td align="left">Unknown</td>
+<td align="left">RSEM</td>
+<td align="left">Gene</td>
+</tr>
+<tr class="even">
+<td align="left">RNA-seq</td>
+<td align="left">venous blood</td>
+<td align="left">Chronic Lymphocytic Leukemia</td>
+<td align="left">3CLL</td>
+<td align="left">Male</td>
+<td align="left">RSEM</td>
+<td align="left">Gene</td>
+</tr>
+<tr class="odd">
+<td align="left">RNA-seq</td>
+<td align="left">venous blood</td>
+<td align="left">Chronic Lymphocytic Leukemia</td>
+<td align="left">1228CLL</td>
+<td align="left">Male</td>
+<td align="left">RSEM</td>
+<td align="left">Gene</td>
+</tr>
+<tr class="even">
+<td align="left">RNA-seq</td>
+<td align="left">venous blood</td>
+<td align="left">Chronic Lymphocytic Leukemia</td>
+<td align="left">1532CLL</td>
+<td align="left">Male</td>
+<td align="left">RSEM</td>
+<td align="left">Gene</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
 
