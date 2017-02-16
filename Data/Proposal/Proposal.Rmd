@@ -10,13 +10,14 @@ Human hematopoietic cells capable of regenerating the lifelong production of all
 So far only two resources, the Canadian CEEHRC Network and the BluePrint Epigenome project have been available for comprehensive epigenomics of human blood cells. As part of the latter, Farlik M. et al recently generated DNA methylation profiles with RNA-seq data for HSC and six progenitor populations, which characterized differential DNA methylation at transcription factor binding sites (TFBSs) as cells commit to different lineages [6]. However, the TFBS database they used was from a collection of cell lines from various malignant/normal tissues, which might increase the noise for identification of true functional TFs in our targeted populations. Alternatively, we will use a motif enrichment analysis in the recognized active DNA methylation regions in the particular cell type [5][7]. In addition, their study mainly focused on DNA methylation at the promoter regions, however, it has been shown in mouse HSCs that DNA methylation at enhancers was more informative for lineage commitment prediction [4]. Therefore, we will also focus on enhancer regions by integrating the genomic information from the Ensembl Regulatory Build [8].
 
 **Division of labor:**
+---
 | Name | Initial work assignment | 
 | ------------- | ------------- |
 | Annie Cavalla | Section 3: TF binding site enrichment |
 | Rawnak Hoque  | Section 2: RNA-seq analysis of differentially expressed genes  
 | Somdeb Paul | Section 4: TF pattern function analysis
 | Fangwu Wang  | Section 1: DNA methylation analysis |
-
+---
 All members will also have input into the poster on their area of expertise.
 
 
