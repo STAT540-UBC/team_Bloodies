@@ -1,0 +1,6 @@
+Annie Cavalla
+
+Listing my preprocessing and analysis steps.
+The overall idea is to
+The first step will be to analyse RNA-seq data for upregulation (compared to what?) of TFs, and cross-reference these back to the data for hematopoeitic cell differentiation.
+The second step will be to analyse DNA methylation data to see whether TF binding sites (based on some consensus sequence from the literature) have been made more accessible, based on reduced methylation in this area.
