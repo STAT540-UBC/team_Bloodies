@@ -15,7 +15,7 @@ So far only two resources, the Canadian CEEHRC Network and the BluePrint Epigeno
 
 **Division of labor:**
 ---
-| Name | Initial work assignment | Affliation | Expertise |
+| Name | Initial work assignment | Affiliation | Expertise |
 | ------------- | ------------- | ------------- | ------------- |
 | Annie Cavalla | Section 3: TF binding site enrichment | Bioinformatics | Cancer genomics |
 | Rawnak Hoque  | Section 2/5: RNA-seq analysis of differentially expressed genes | Genome Science and Technology | Genome scale data analysis
