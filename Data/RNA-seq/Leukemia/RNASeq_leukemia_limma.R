@@ -12,6 +12,7 @@ runLimmaAnalysis <- function(counts, groups){
 
   
   library("limma")
+  library("edgeR")
   
   # Build design matrix
   des <- model.matrix(~groups)
@@ -48,9 +49,16 @@ runLimmaAnalysis <- function(counts, groups){
 #-------------------------------------------------------------
 
 
-setwd("C:/Users/rawna/Documents/GSAT-540-UBC/team_Bloodies/Data/RNA-seq/Leukemia")
-counts <- list(AML=read.csv('AML/AML_expected_count_data.csv', header=TRUE, row.names=1),
-               ALL=read.table('CLL/CLL_expected_count_data.csv', header=TRUE, row.names=1))
+setwd("C:/Users/rawnak/Documents/team_Bloodies/Data/RNA-seq/Leukemia")
+AML=read.table('AML/AML_expected_count_data.csv', sep = ',', header=TRUE, row.names=1)
+CLL=read.table('CLL/CLL_expected_count_data.csv',sep = ',', header=TRUE, row.names=1)
+new_AML <- AML[,-1]
+rownames(new_AML) <- AML[,1]
+new_CLL <- CLL[,-1]
+rownames(new_CLL)<- CLL[,1]
+counts <- list(new_AML,new_CLL)
+
+na_count <-sapply(AML, function(y) sum(length(which(is.na(y)))))
 
 groups <- factor(c(rep("AML", 7), c(rep("CLL", 7))))
 
