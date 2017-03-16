@@ -14,10 +14,7 @@ The input format of RnBeads is bismarkCov style:
 library(RnBeads)
 ```
 
-```
-## Warning: replacing previous import 'gridExtra::combine' by
-## 'methylumi::combine' when loading 'RnBeads'
-```
+
 
 ```r
 rnb.options(import.bed.style="bismarkCov")
@@ -73,16 +70,16 @@ temp[,4]<-round(temp[,4])
 write.table(temp,file = "/Users/fangwu/Documents/540/data/Data/Progenitors/DNAmethylation/HSC/HSC_1000_D7.bed",quote = F,sep = "\t",row.names = F,col.names = F)
 ```
 
-Then we use Bedtools with terminal command to sort and get intersect and distinct locations between two Bed files.  
+Then we used Bedtools with terminal command to sort and get intersect and distinct locations between two Bed files.  
 Merge the first two replicates:
----
+
 cd ~fangwu/Documents/540/data/Data/Progenitors/DNAmethylation/HSC
 sort -k1,1 -k2,2n HSC_50_D7_1.bed > HSC_50_D7_1.sort.bed
 sort -k1,1 -k2,2n HSC_50_D7_2.bed > HSC_50_D7_2.sort.bed
 sort -k1,1 -k2,2n HSC_1000_D7.bed > HSC_1000_D7.sort.bed
 bedtools map -a HSC_50_D7_1.sort.bed -b HSC_50_D7_2.sort.bed -c 5,6 -o sum -null 0 > Hm1.bed
 bedtools intersect -a HSC_50_D7_2.sort.bed -b HSC_50_D7_1.sort.bed -v > d1.bed
----
+
 Following processing with R:
 
 ```r
@@ -97,11 +94,11 @@ write.table(merge1,file = "/Users/fangwu/Documents/540/data/Data/Progenitors/DNA
 
 Now merge the third replicate to the merged file of the first two replicates: 
 Terminal command-  
----
+
 sort -k1,1 -k2,2n Hm1p.bed > Hm1p.sort.bed
 bedtools map -a Hm1p.sort.bed -b HSC_1000_D7.sort.bed -c 5,6 -o sum -null 0 > Hm2.bed
 bedtools intersect -a HSC_1000_D7.sort.bed -b Hm1p.sort.bed -v > d2.bed
----
+
 
 ```r
 merge1<-read.delim(file="/Users/fangwu/Documents/540/data/Data/Progenitors/DNAmethylation/HSC/Hm2.bed",header=F,sep="\t")
