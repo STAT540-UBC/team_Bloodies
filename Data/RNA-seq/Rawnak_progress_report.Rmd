@@ -8,7 +8,7 @@ output: html_document
 
 ## Deferentially expressed genes in normal data
 The normal data lack replicates, so we created a heatmap for quality check and detected an outlier. We removed one GMP sample from there.
-The resulted heatmap is [here](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Data/RNA-seq/Normal/results/reformed-heatmap.pdf)
+The resulted heatmap is [here](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Data/RNA-seq/Normal/results/heatmap.pdf)
 
 The follwoing [Rscript](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Data/RNA-seq/Normal/code/RNASeq_normal.R) was used to analyse the data. 
 
@@ -16,7 +16,7 @@ The follwoing [Rscript](https://github.com/STAT540-UBC/team_Bloodies/blob/master
  
 
 A list of deferentially expressed genes in two groups of leukemia samples were generated using limma and edgeR Bioconductor packages. 
-The R scipt is [here](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Data/RNA-seq/Leukemia/code/RNASeq_leukemia_limma.R) 
+ 
 
 In each of the groups or subtype of leukemia we had 7 replicates with RNASeq raw count data.
 We normalizes the data and fit into linear model 

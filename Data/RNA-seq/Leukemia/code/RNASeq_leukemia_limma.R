@@ -34,6 +34,7 @@ fit <- eBayes(fit)
 
 # Extract all results
 top.table <- topTable(fit, coef=2, n=Inf, p.value=0.05)
+#top.table1 <- top.table[top.table$adj.P.Val<0.05,]
 
 #distribution of the p value
 hist(top.table$P.Value,col="grey50", border="white")

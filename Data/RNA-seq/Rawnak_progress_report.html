@@ -126,12 +126,12 @@ $(document).ready(function () {
 
 <div id="deferentially-expressed-genes-in-normal-data" class="section level2">
 <h2>Deferentially expressed genes in normal data</h2>
-<p>The normal data lack replicates, so we created a heatmap for quality check and detected an outlier. We removed one GMP sample from there. The resulted heatmap is <a href="https://github.com/STAT540-UBC/team_Bloodies/blob/master/Data/RNA-seq/Normal/results/reformed-heatmap.pdf">here</a></p>
+<p>The normal data lack replicates, so we created a heatmap for quality check and detected an outlier. We removed one GMP sample from there. The resulted heatmap is <a href="https://github.com/STAT540-UBC/team_Bloodies/blob/master/Data/RNA-seq/Normal/results/heatmap.pdf">here</a></p>
 <p>The follwoing <a href="https://github.com/STAT540-UBC/team_Bloodies/blob/master/Data/RNA-seq/Normal/code/RNASeq_normal.R">Rscript</a> was used to analyse the data.</p>
 </div>
 <div id="deferentially-expressed-genes-in-leukemia-data" class="section level2">
 <h2>Deferentially expressed genes in leukemia data</h2>
-<p>A list of deferentially expressed genes in two groups of leukemia samples were generated using limma and edgeR Bioconductor packages. The R scipt is <a href="https://github.com/STAT540-UBC/team_Bloodies/blob/master/Data/RNA-seq/Leukemia/code/RNASeq_leukemia_limma.R">here</a></p>
+<p>A list of deferentially expressed genes in two groups of leukemia samples were generated using limma and edgeR Bioconductor packages.</p>
 <p>In each of the groups or subtype of leukemia we had 7 replicates with RNASeq raw count data. We normalizes the data and fit into linear model We created a mean difference <a href="https://github.com/STAT540-UBC/team_Bloodies/blob/master/Data/RNA-seq/Leukemia/results/log-expression-fold-change.pdf">plot</a> displaying the log-fold-changes and average A-values for each gene. The P-value distribution were plotted <a href="https://github.com/STAT540-UBC/team_Bloodies/blob/master/Data/RNA-seq/Leukemia/results/p-value-distribution.pdf">here</a>. The values are not uniformly distributed which indicates the null hypothesis is rejected or there are significant differences between the two leukemia groups(AML and CLL).</p>
 <p>The top 9000 deferentially expressed <a href="https://raw.githubusercontent.com/STAT540-UBC/team_Bloodies/master/Data/RNA-seq/Leukemia/results/toptable.txt?token=AX06pOlK3uKeRoJeLjChSs2TmFcoubz7ks5Y0zE4wA%3D%3D">genes</a> having P value &lt;=0.05 were detected.</p>
 <p>The following <a href="https://github.com/STAT540-UBC/team_Bloodies/blob/master/Data/RNA-seq/Leukemia/code/RNASeq_leukemia_limma.R">Rscript</a> was used to analyze the data.</p>
