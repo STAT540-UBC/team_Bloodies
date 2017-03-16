@@ -25,5 +25,5 @@ The P-value distribution were plotted [here](https://github.com/STAT540-UBC/team
 
 The top 9000 deferentially expressed  [genes](https://raw.githubusercontent.com/STAT540-UBC/team_Bloodies/master/Data/RNA-seq/Leukemia/results/toptable.txt?token=AX06pOlK3uKeRoJeLjChSs2TmFcoubz7ks5Y0zE4wA%3D%3D) having P value <=0.05 were detected. 
 
-The following [Rscript] (https://github.com/STAT540-UBC/team_Bloodies/blob/master/Data/RNA-seq/Leukemia/code/RNASeq_leukemia_limma.R) was used to analyze the data.
+The following [Rscript](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Data/RNA-seq/Leukemia/code/RNASeq_leukemia_limma.R) was used to analyze the data.
 
