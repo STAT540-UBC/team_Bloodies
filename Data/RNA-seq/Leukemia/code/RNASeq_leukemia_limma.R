@@ -1,8 +1,8 @@
-library("limma")
+library(limma)
 library(edgeR)
-setwd("C:/Users/rawnak/Documents/team_Bloodies/Data/RNA-seq/Leukemia")
-AML=read.table('AML/AML_expected_count_data.csv', sep = ',', header=TRUE, row.names=1)
-CLL=read.table('CLL/CLL_expected_count_data.csv',sep = ',', header=TRUE, row.names=1)
+setwd('C:/Users/rawnak/Documents/team_Bloodies/Data/RNA-seq/Leukemia/data')
+AML=read.table('AML_expected_count_data.csv', sep = ',', header=TRUE, row.names=1)
+CLL=read.table('CLL_expected_count_data.csv',sep = ',', header=TRUE, row.names=1)
 new_AML <- AML[,-1]
 rownames(new_AML) <- AML[,1]
 new_CLL <- CLL[,-1]
@@ -33,12 +33,12 @@ abline(0,0,col="blue")
 fit <- eBayes(fit)
 
 # Extract all results
-top.table1 <- topTable(fit, coef=2, n=Inf, p.value=0.05)
+top.table <- topTable(fit, coef=2, n=Inf, p.value=0.05)
 
 #distribution of the p value
-hist(top.table1$P.Value,col="grey50", border="white")
+hist(top.table$P.Value,col="grey50", border="white")
 
-write.table(top.table, file = "toptable.tsv", row.names=TRUE, col.names=NA, sep="\t")
+write.table(top.table, file = "toptable.txt", row.names=TRUE, col.names=NA, sep="\t")
 
 
 
