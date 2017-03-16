@@ -25,10 +25,18 @@ dat <- voom(counts, des, lib.size=lib.size)
 # Fit model
 fit <- lmFit(dat, des)
 
+#create an mean difference plot displaying the log-fold-changes and average A-values for each gene
+plotMD(fit)
+abline(0,0,col="blue")
+
+#Empirical Bayes analysis
 fit <- eBayes(fit)
 
 # Extract all results
 top.table1 <- topTable(fit, coef=2, n=Inf, p.value=0.05)
+
+#distribution of the p value
+hist(top.table1$P.Value,col="grey50", border="white")
 
 write.table(top.table, file = "toptable.tsv", row.names=TRUE, col.names=NA, sep="\t")
 
