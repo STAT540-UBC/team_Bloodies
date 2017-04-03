@@ -6,7 +6,7 @@ output: html_document
   toc: true
   keep_md: true
 ---
-##Data-driven analysis of the role of transcription factors in hematopoietic stem cell differentiation into six progenitor compartments.
+## Data-driven analysis of the role of transcription factors in hematopoietic stem cell differentiation into six progenitor compartments.
 
 **Background & Motivation:** 
 Human hematopoietic cells capable of regenerating the lifelong production of all types of mature blood cells are applied to curative clinical therapies for numerous hematologic malignancies and congenital diseases [1]. Blood differentiation initiates at the level of multipotent stem cells and passes through a series of increasingly lineage-restricted progenitor intermidiates [2]. Due to the rarity of these progenitors and difficulties to obtain human samples, the mechanisms that regulate lineage commitment of human cells remain poorly understood. Transcription factors (TFs) and their interactions within gene regulatory networks are central to the intracellular decision making processes [3]. However, much remains to be learned about the way in which individual factors are connected within wider regulatory networks. Recent studies implicated that the chromatin state foreshadows transcriptional programs in differentiated cells [4][5][6]. Our overall hypothesis is that TFs binding to the active epigenomic regions play a pivotal role in the differentiation programs during early lineage commitment of HSCs. Our objective is to identify specific TFs primarily responsible for the differential gene expression in committed progenitors by combining epigenomic and transcriptomic data in seven hematopoietic stem/progenitor populations.  
