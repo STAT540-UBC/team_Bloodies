@@ -158,7 +158,7 @@ Summary of DNA methylation data:
 
 # Description of RNA-seq data: 
 
-##** RNA-seq for normal samples (matched to DNA methylation)**
+## RNA-seq for normal samples (matched to DNA methylation)**
 The RNA-seq data was from the same study and obtained from GEO (GSE87195). The only one data file "GSE87195_rnaseq_ensT_all.csv" was deposited under "Data" folder of our team repo. The raw data is not directly available for RNA-seq. The uploaded file has been almost fully processed and the output is the format after differential expression analysis using the BitSeq software. The data is quantified at transcript level with ENST IDs.
 
 Samples: This single file contains all seven populations of interest corresponding to the DNA methylation data with the same tissue origin.  
@@ -197,7 +197,7 @@ Summary of DNA methylation data:
 ## 7 Differential expression result
 ```
 
-##** RNA-seq for leukemia samples**
+## RNA-seq for leukemia samples**
 
 Two types of leukemia samples--Acute myeloid leukemia and chromic lymphocytic leukemia--were derived from BluePrint Epigenome consortium: http://dcc.blueprint-epigenome.eu/#/experiments
 
