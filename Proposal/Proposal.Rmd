@@ -18,7 +18,7 @@ So far only two resources, the Canadian CEEHRC Network and the BluePrint Epigeno
 | Name | Initial work assignment | Affiliation | Expertise |
 | ------------- | ------------- | ------------- | ------------- |
 | Annie Cavalla | Section 3: TF binding site enrichment | Bioinformatics | Cancer genomics |
-| Rawnak Hoque  | Section 2/5: RNA-seq analysis of differentially expressed genes | Genome Science and Technology | Genome scale data analysis
+| Rawnak Hoque  | Section 2/5: RNA-seq analysis of differentially expressed genes; TF binding site enrichment | Genome Science and Technology | Genome scale data analysis
 | Fangwu Wang | Section 4/5: TF pattern analysis; Leukemia correlation | Medical Genetics | Stem cell biology
 | Somdeb Paul  | Section 1: DNA methylation analysis | Genome Science and Technology | Transcriptomics |
 ---
