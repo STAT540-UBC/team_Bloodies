@@ -63,7 +63,7 @@ e. [Correlation with RNA expression](https://github.com/STAT540-UBC/team_Bloodie
 Methods:  
 f. [Data preparation: replicate merging](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Methods/DNA_methylation_RnBeads/methylation.merge.md)  
 g. [Enhancer annotation-code](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Methods/DNA_methylation_RnBeads/Annotation_Rnbeads_Revised.R)  
-h. [RnBeads]()  
+h. [RnBeads](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Methods/DNA_methylation_RnBeads) - The code for the RnBeads analysis can be found here.  
 i. [intersection between DNA/RNA gene lists-code](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Methods/DNA_methylation_RnBeads/Methylation_Gene.expr_intersect.R)  
 
 
