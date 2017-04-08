@@ -9,12 +9,12 @@ Links to:
 [Poster](team_Bloodies/Poster/Poster.pdf)
 
 Members and division of labor
-| Name | Initial work assignment | Affiliation | Expertise |
-| ------------- | ------------- | ------------- | ------------- |
-| Annie Cavalla | TF motif enrichment analysis | Bioinformatics | Cancer genomics |
-| Rawnak Hoque  | RNA-seq analysis and TF motif enrichment analysis | Genome Science and Technology | Genome scale data analysis
-| Fangwu Wang | DNA methylation analysis, TF clustering | Medical Genetics | Stem cell biology
-| Somdeb Paul  | DNA methylation analysis | Genome Science and Technology | Transcriptomics |
+| Name | Initial work assignment | Affiliation | Expertise |  
+| ------------- | ------------- | ------------- | ------------- |  
+| Annie Cavalla | TF motif enrichment analysis | Bioinformatics | Cancer genomics |  
+| Rawnak Hoque  | RNA-seq analysis and TF motif enrichment analysis | Genome Science and Technology | Genome scale data analysis |  
+| Fangwu Wang | DNA methylation analysis, TF clustering | Medical Genetics | Stem cell biology|  
+| Somdeb Paul  | DNA methylation analysis | Genome Science and Technology | Transcriptomics |  
 
 
 **Rationale**: Human hematopoietic stem cells (HSCs) hold great clinical promises for curative HSC transplantation therapies for numerous hematologic malignancies and diseases. Understanding the mechanisms regulating the self-renewal and lineage restriction of HSCs is crucial for improving transplantation regimens. HSC is thought to acquire multi-step lineage restriction through going down multiple progenitor populations, during which process the myeloid vs.lymphoid binary decision is made with subsequent progeny restricted to either fate. In this project, we are interested in the epigenomic status of HSCs and other progenitor populations and how it interacts with transcription factor binding to regulate lineage differentiation program.
@@ -66,27 +66,27 @@ h. [RnBeads]()
 i. [intersection between DNA/RNA gene lists-code](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Methods/DNA_methylation_RnBeads/Methylation_Gene.expr_intersect.R)  
 
 
-2. [RNA expression of progenitors](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/2.RNA-seq/Normal)  
+#### 2. [RNA expression of progenitors](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/2.RNA-seq/Normal)  
 a. [Sanity check](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/2.RNA-seq/Normal)  
 b. [Differential expression gene lists](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/2.RNA-seq/Normal/Genelist)  
 c. Methods:  
 [Data processing and gene id conversion](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Methods/RNAseq_Normal)  
 
-3. [RNA expression of leukemia samples](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/2.RNA-seq/Leukemia)  
+#### 3. [RNA expression of leukemia samples](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/2.RNA-seq/Leukemia)  
 a. [Results](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/2.RNA-seq/Leukemia/results)  
 [Differential gene table](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Results/2.RNA-seq/Leukemia/results/toptable.txt)  
 b. Methods:  
 [limma](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Methods/RNAseq_leukemia/RNASeq_leukemia_limma.R)  
 
 
-4. [Transcription factor motif analysis](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/4.TF_motif_enrichment)  
+#### 4. [Transcription factor motif analysis](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/4.TF_motif_enrichment)  
 a. [TFs found at Enhancer](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/4.TF_motif_enrichment/RESULTS_enhancer)  
 b. [TFs found at Promoter](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/4.TF_motif_enrichment/RESULTS_promoter)  
 c. Methods  
 [Input files](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/4.TF_motif_enrichment/Input_text_files_TFmotif)  
 [HOMER Findingmotif tool]()  
 
-5. [TF clustering in normal and leukemia expression data](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/5.TF_clustering)  
+#### 5. [TF clustering in normal and leukemia expression data](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/5.TF_clustering)  
 a. [Normal samples CMP/MLP](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Results/5.TF_clustering/Clustering_TFlist_normal_CMP-MLP.pdf)  
 b. [Leukemia samples AML/CLL](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Results/5.TF_clustering/Leukemia_TF_clustering.pdf)  
 c. Methods  
