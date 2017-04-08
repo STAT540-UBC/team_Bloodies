@@ -46,7 +46,7 @@ The input file should be a text or .txt file containing the following tab separa
 Pair wise differential methylation analysis created a pair of files containing hypomethylated region in each cell types. The cell types used for the motif enrichment in promoter and enhancer regions are- CMP-MLP, GMP-CLP, MPP-CMP, MPP-MLP, HSC-MPP. So, for our analysis, we had two files for each pair. For promoter region, we had 10 files and enhancer region we had 10 file, i.e. 20 files in total. 
 Each of the run took about 1.5 hours in a supercomputer. 
 The output is the enriched sequences which have known biological function. Each of the motif has its corresponding p-value, log P-value, number of target sequences with motif with the corresponding percentage, and number of background sequences with motif. The output known results file looks like the following-
-![Known motif from CMP-MLP enhancer region](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Methods/TF_clustering/Screen%20Shot%202017-04-04%20at%2010.14.37%20AM.png)
+![Known motif from CMP-MLP enhancer region](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Methods/TF_clustering/CMP-MLP-enhancer-motif-enrichment.png)
 
 The results looked very interesting since we found the top known TFs that are abundant in the enhancer and promoter region in HSCs differentiations.
 In the final step, we compared the enriched motifs of the lymphoid and myeloid paired cells with corresponding genes from the RNAseq normally expressed data.
