@@ -54,42 +54,42 @@ We analyzed the overlapped genes of DNA methylation and RNA expression to see if
 
 #### 1. [DNA Methylation]()  
 RnBeads analysis of pairwise comparison: 
-a. [Beta-value distribution and variation](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/1.DNA_methylation_RnBeads/Variance%26Distribution)
-b. [PCA](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/1.DNA_methylation_RnBeads/PCA)
-c. [Clustering](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/1.DNA_methylation_RnBeads/Clustering)
-d. [Differential methylated regions](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/1.DNA_methylation_RnBeads/Differential_meth_regions_filtered)
-e. [Correlation with RNA expression](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/3.DNAme_RNA_correlation)  
-Methods:
-f. [Data preparation: replicate merging](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Methods/DNA_methylation_RnBeads/methylation.merge.md)
-g. [Enhancer annotation-code](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Methods/DNA_methylation_RnBeads/Annotation_Rnbeads_Revised.R)
-h. [RnBeads]()
-i. [intersection between DNA/RNA gene lists-code](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Methods/DNA_methylation_RnBeads/Methylation_Gene.expr_intersect.R)
+a. [Beta-value distribution and variation](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/1.DNA_methylation_RnBeads/Variance%26Distribution)  
+b. [PCA](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/1.DNA_methylation_RnBeads/PCA)  
+c. [Clustering](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/1.DNA_methylation_RnBeads/Clustering)  
+d. [Differential methylated regions](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/1.DNA_methylation_RnBeads/Differential_meth_regions_filtered)  
+e. [Correlation with RNA expression](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/3.DNAme_RNA_correlation)    
+Methods:  
+f. [Data preparation: replicate merging](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Methods/DNA_methylation_RnBeads/methylation.merge.md)  
+g. [Enhancer annotation-code](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Methods/DNA_methylation_RnBeads/Annotation_Rnbeads_Revised.R)  
+h. [RnBeads]()  
+i. [intersection between DNA/RNA gene lists-code](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Methods/DNA_methylation_RnBeads/Methylation_Gene.expr_intersect.R)  
 
 
 2. [RNA expression of progenitors](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/2.RNA-seq/Normal)
-a. [Sanity check](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/2.RNA-seq/Normal)
-b. [Differential expression gene lists](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/2.RNA-seq/Normal/Genelist)
-c. Methods:
-[Data processing and gene id conversion](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Methods/RNAseq_Normal)
+a. [Sanity check](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/2.RNA-seq/Normal)  
+b. [Differential expression gene lists](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/2.RNA-seq/Normal/Genelist)  
+c. Methods:  
+[Data processing and gene id conversion](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Methods/RNAseq_Normal)  
 
 3. [RNA expression of leukemia samples](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/2.RNA-seq/Leukemia)
-a. [Results](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/2.RNA-seq/Leukemia/results)
-[Differential gene table](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Results/2.RNA-seq/Leukemia/results/toptable.txt)
-b. Methods:
-[limma](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Methods/RNAseq_leukemia/RNASeq_leukemia_limma.R)
+a. [Results](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/2.RNA-seq/Leukemia/results)  
+[Differential gene table](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Results/2.RNA-seq/Leukemia/results/toptable.txt)  
+b. Methods:  
+[limma](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Methods/RNAseq_leukemia/RNASeq_leukemia_limma.R)  
 
 
 4. [Transcription factor motif analysis](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/4.TF_motif_enrichment)
-a. [TFs found at Enhancer](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/4.TF_motif_enrichment/RESULTS_enhancer)
-b. [TFs found at Promoter](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/4.TF_motif_enrichment/RESULTS_promoter)
-c. Methods
-[Input files](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/4.TF_motif_enrichment/Input_text_files_TFmotif)
-[HOMER Findingmotif tool]()
+a. [TFs found at Enhancer](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/4.TF_motif_enrichment/RESULTS_enhancer)  
+b. [TFs found at Promoter](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/4.TF_motif_enrichment/RESULTS_promoter)  
+c. Methods  
+[Input files](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/4.TF_motif_enrichment/Input_text_files_TFmotif)  
+[HOMER Findingmotif tool]()  
 
 5. [TF clustering in normal and leukemia expression data](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/5.TF_clustering)
-a. [Normal samples CMP/MLP](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Results/5.TF_clustering/Clustering_TFlist_normal_CMP-MLP.pdf)
-b. [Leukemia samples AML/CLL](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Results/5.TF_clustering/Leukemia_TF_clustering.pdf)
-c. Methods
-[TF list feeding into expression](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Methods/TF_clustering/TF_RNAseq_clustering.R)
+a. [Normal samples CMP/MLP](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Results/5.TF_clustering/Clustering_TFlist_normal_CMP-MLP.pdf)  
+b. [Leukemia samples AML/CLL](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Results/5.TF_clustering/Leukemia_TF_clustering.pdf)  
+c. Methods  
+[TF list feeding into expression](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Methods/TF_clustering/TF_RNAseq_clustering.R)  
 
 
