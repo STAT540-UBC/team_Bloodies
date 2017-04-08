@@ -1,14 +1,13 @@
-library(limma)
-library(edgeR)
 setwd('C:/Users/rawnak/Documents/team_Bloodies/Data/RNA-seq/Leukemia/data')
+library(limma)
 AML=read.table('AML_expected_count_data.csv', sep = ',', header=TRUE, row.names=1)
 CLL=read.table('CLL_expected_count_data.csv',sep = ',', header=TRUE, row.names=1)
+
 new_AML <- AML[,-1]
 rownames(new_AML) <- AML[,1]
 new_CLL <- CLL[,-1]
 rownames(new_CLL)<- CLL[,1]
 counts <- cbind(new_AML,new_CLL)
-
 groups <- factor(c(rep("AML", 7), c(rep("CLL", 7))))
 
 # Build design matrix
