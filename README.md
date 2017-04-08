@@ -4,9 +4,9 @@ This is the repository for the group project of Team Bloodies.
 ==============================================
 Links to:
 
-[Proposal]()
-[Progress Report]()
-[Poster]()
+[Proposal](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Proposal/Proposal.md)
+[Progress Report](https://github.com/STAT540-UBC/team_Bloodies/issues/11)
+[Poster](team_Bloodies/Poster/Poster.pdf)
 
 Members and division of labor
 | Name | Initial work assignment | Affiliation | Expertise |
