@@ -1,14 +1,6 @@
----
-title: "Project Proposal"
-author: "Team Bloodies"
-date: '2017-02-14'
-output: 
-  html_document:
-    keep_md: true
-    toc: yes
-    toc_depth: 2
-    toc_float: yes
----
+# Project Proposal
+Team Bloodies  
+2017-02-14  
 ## Data-driven analysis of the role of transcription factors in hematopoietic stem cell differentiation into six progenitor compartments.
 
 **Background & Motivation:** 
