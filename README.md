@@ -8,7 +8,7 @@ Links to:
 [Progress Report](https://github.com/STAT540-UBC/team_Bloodies/issues/11)
 [Poster](team_Bloodies/Poster/Poster.pdf)
 
-Members and division of labor
+Members and division of labor  
 | Name | Initial work assignment | Affiliation | Expertise |  
 | ------------- | ------------- | ------------- | ------------- |  
 | Annie Cavalla | TF motif enrichment analysis | Bioinformatics | Cancer genomics |  
