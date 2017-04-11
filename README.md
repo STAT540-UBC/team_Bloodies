@@ -6,7 +6,7 @@ Links to:
 
 [Proposal](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Proposal/Proposal.md)  
 [Progress Report](https://github.com/STAT540-UBC/team_Bloodies/issues/11)  
-[Poster](https://github.com/STAT540-UBC/team_Bloodies/Poster/Poster.pdf)  
+[Poster](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Poster/Poster.pdf)  
 
 Members and division of labor  
 
@@ -23,9 +23,9 @@ Members and division of labor
 
 
 #### Data source: 
-Our Dataset includes matched [DNA methylation]() (bisulfite-seq) and [RNA-seq]() data from HSCs and 5 other progenitor cell types, obtained from a recent publication ([Farlik M. et al, Cell, 2016]()) which characterized the differentiation path of HSCs based on cell DNA methylation profiles.
+Our [Dataset](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Data) includes matched [DNA methylation](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Data/DNAmethylation) (bisulfite-seq) and [RNA-seq](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Data/RNAseq_Normal-progenitors) data from HSCs and 5 other progenitor cell types, obtained from a recent publication ([Farlik M. et al, Cell, 2016](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Proposal/Background%20papers/2016%20DNA%20Methylation%20Dynamics%20of%20Human%20Hematopoietic%20Stem%20Cell%20Differentiation.pdf)) which characterized the differentiation path of HSCs based on cell DNA methylation profiles.
 
-**Different strategy from the published paper**: To more rigorously identify TFs with a potential function in cell differentiation, we annotated DNA methylation using both promoters and [enhancers](). The enhancer regions were defined from two hematopoietic cell lines (K562, GM12878).
+**Different strategy from the published paper**: To more rigorously identify TFs with a potential function in cell differentiation, we annotated DNA methylation using both promoters and [customized enhancers](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Methods/DNA_methylation_RnBeads/Annotation_Rnbeads_Revised.R). The enhancer regions were defined from two hematopoietic cell lines (K562, GM12878) from the Genome Segment ChromHMM tracks ([UCSC table browser](https://genome.ucsc.edu/cgi-bin/hgTables?hgsid=588150561_UAawdTOBEcdvk8tkpo1FPUUQax2S&clade=mammal&org=Human&db=hg19&hgta_group=regulation&hgta_track=knownGene&hgta_table=0&hgta_regionType=genome&position=chr21%3A33%2C031%2C597-33%2C041%2C570&hgta_outputType=primaryTable&hgta_outFileName=)).
 
 **Data replicate summary**: 
 
@@ -54,7 +54,7 @@ We analyzed the overlapped genes of DNA methylation and RNA expression to see if
 
 #### Analysis and Major Findings:
 
-#### 1. [DNA Methylation]()  
+#### 1. [DNA Methylation](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/1.DNA_methylation_RnBeads)  
 RnBeads analysis of pairwise comparison:  
 a. [Beta-value distribution and variation](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/1.DNA_methylation_RnBeads/Variance%26Distribution)  
 b. [PCA](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/1.DNA_methylation_RnBeads/PCA)  
@@ -64,12 +64,12 @@ e. [Correlation with RNA expression](https://github.com/STAT540-UBC/team_Bloodie
 Methods:  
 f. [Data preparation: replicate merging](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Methods/DNA_methylation_RnBeads/methylation.merge.md)  
 g. [Enhancer annotation-code](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Methods/DNA_methylation_RnBeads/Annotation_Rnbeads_Revised.R)  
-h. [RnBeads](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Methods/DNA_methylation_RnBeads) - The code for the RnBeads analysis can be found here.  
+h. RnBeads: [all samples](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Methods/DNA_methylation_RnBeads/RnBeads_Complete_Run.R) and [pairwise comparison](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Methods/DNA_methylation_RnBeads/GMP-CLP.R) (CLP-GMP as an example)   
 i. [intersection between DNA/RNA gene lists-code](https://github.com/STAT540-UBC/team_Bloodies/blob/master/Methods/DNA_methylation_RnBeads/Methylation_Gene.expr_intersect.R)  
 
 
 #### 2. [RNA expression of progenitors](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/2.RNA-seq/Normal)  
-a. [Sanity check](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/2.RNA-seq/Normal)  
+a. [Sanity check](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/2.RNA-seq/Normal):sample-sample correlation, heatmap clustering  
 b. [Differential expression gene lists](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Results/2.RNA-seq/Normal/Genelist)  
 Methods:  
 c. [Data processing and gene id conversion](https://github.com/STAT540-UBC/team_Bloodies/tree/master/Methods/RNAseq_Normal)  
